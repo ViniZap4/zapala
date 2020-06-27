@@ -21,6 +21,11 @@
   font-size: 2.7vmin;
 }
 
+@media only screen and (max-width:600px){
+  .MenuBarTopLogo{
+    font-size: 0vmin;
+  }
+}
 
 .MenuBarTopMenu{
   margin-right: 1.8vw;

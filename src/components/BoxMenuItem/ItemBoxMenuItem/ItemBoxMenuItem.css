@@ -26,6 +26,8 @@
   box-shadow: 0.36vmin 0.36vmin 1.8vmin #000000a4;
 }
 
+
+
 /* --------- span ➤ ---------  */
 
 .ItemBoxMenuItem .ItemBoxMenuItemIcon{
@@ -40,4 +42,20 @@
   transform: scale(1);
 
   opacity: 1;
+}
+
+
+@media only screen and (max-width:630px){
+  .ItemBoxMenuItem{
+    font-size: 3.6vmin;
+    margin: 1.8vh 3.6vw ;
+  }
+
+  .ItemBoxMenuItem .ItemBoxMenuItemIcon{
+
+    font-size: 3.6vmin;
+    margin:0vh 0.9vw;
+ 
+  }
+  
 }

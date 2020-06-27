@@ -22,10 +22,10 @@
   box-shadow: 0.36vmin 0.36vmin 1.8vmin #949494;
 }
 
-@media only screen  and (max-width:600px){
+@media only screen  and (max-width:630px){
   .Inlustation{
     margin-top: 12.6vh;
-    width: 81vw;
-    height:81vw;
+    width: 90vw;
+    height:90vw;
   }
 } 
