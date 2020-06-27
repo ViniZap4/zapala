@@ -1,0 +1,32 @@
+.MenuBarTop{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  height: 7.2vmin;
+  /* box-shadow: 0vmin 0.36vmin 9vmin #00000094; */
+  box-shadow: 0.63vmin 0.63vmin 2.1vmin rgba(15, 15, 15, 0.685) ;
+
+}
+
+.MenuBarTopLogo{
+  margin-left: 0.9vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 2.7vmin;
+}
+
+
+.MenuBarTopMenu{
+  margin-right: 1.8vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 2.7vmin;
+}

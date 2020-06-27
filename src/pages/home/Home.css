@@ -1,0 +1,31 @@
+
+.HomeContent{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100vw;
+}
+.Inlustation{
+  margin-top: 6.3vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 40vw;
+  height: 40vw;
+  padding: 1.8vh  1.8vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2.7vmin;
+  border-radius: 0.63vmin;
+  box-shadow: 0.36vmin 0.36vmin 1.8vmin #949494;
+}
+
+@media only screen  and (max-width:600px){
+  .Inlustation{
+    margin-top: 12.6vh;
+    width: 81vw;
+    height:81vw;
+  }
+} 

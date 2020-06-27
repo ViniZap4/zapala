@@ -1,0 +1,43 @@
+.ItemBoxMenuItem{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.8vh 0.9vw ; 
+  padding: 0.9vh 0vw ;
+  padding-right: 1.62vw;
+  padding-left: 0.36vw;
+
+  
+  font-size: 2.7vmin;
+
+  border-radius: 6.3vmin;
+
+  cursor: pointer;
+
+}
+.ItemBoxMenuItem:hover{
+  transform: scale(1.08);
+  color: #fff;
+  background-color: #008888;
+  border-radius: 0.36vmin;
+  
+  box-shadow: 0.36vmin 0.36vmin 1.8vmin #000000a4;
+}
+
+/* --------- span ➤ ---------  */
+
+.ItemBoxMenuItem .ItemBoxMenuItemIcon{
+  transform: scale(0.5);
+  color:#fff;
+  font-size: 2.7vmin;
+  margin-right: 0.63vw;
+  opacity: 0;
+}
+
+.ItemBoxMenuItem:hover .ItemBoxMenuItemIcon{
+  transform: scale(1);
+
+  opacity: 1;
+}

@@ -1,0 +1,62 @@
+.IconMenu{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 9vmin;
+  height: 9vmin;
+  cursor: pointer;
+}
+.IconMenu:hover {
+  transform: scale(1.1);
+}
+.ElementIconMenu{
+  display: flex;
+  width: 100%;
+  height: 12.6%;
+  border-radius: 1.8vmin;
+  
+  background-color: #000;
+
+}
+
+.IconMenu:hover #ElementIconMenustyle0{
+  animation:IconMenuHover0 1.26s linear infinite ;
+}
+.IconMenu:hover #ElementIconMenustyle1{
+  animation:IconMenuHover1 1.26s linear infinite ;
+}
+.IconMenu:hover #ElementIconMenustyle2{
+  animation:IconMenuHover2 1.26s linear infinite ;
+}
+
+
+@keyframes IconMenuHover0{
+  0%{ width: 100%; 
+  }25%{width: 20%;   border-radius: 3.6vmin; 
+    background-color: #008888;
+ 
+  }100%{ width: 100%; }
+}
+@keyframes IconMenuHover1{
+  0%{width: 100%;
+  }50%{width: 20%; border-radius: 3.6vmin;  
+     background-color: #008888;
+   
+  }100%{width: 100%;}
+}
+@keyframes IconMenuHover2{
+  0%{width: 100%;
+  }75%{width: 20%;  border-radius: 3.6vmin; 
+    background-color: #008888;
+
+  }100%{width: 100%;}
+}
+
+#ElementIconMenustyleClick{
+  animation: IconMenuHover1 0.9s linear;
+  width: 110%;
+
+  
+}

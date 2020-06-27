@@ -1,0 +1,30 @@
+.BoxMenuItem{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  background-color: #fff;
+  
+  right: -25vw ;
+  top: 10vmin;
+  
+  max-height: 81vh;
+  overflow-x: hidden;
+  overflow-Y: auto;
+
+  padding: 1.8vh 0.36vw;
+
+  border-radius: 0.63vmin;
+
+  box-shadow: 0.36vmin 0.36vmin 1.8vmin rgba(15, 15, 15, 0.411) ;
+  z-index: 0;
+  transform: scale(0);
+
+
+}
+.BoxMenuItem:hover{
+  box-shadow: 0.63vmin 0.63vmin 2.1vmin rgba(15, 15, 15, 0.87) ;
+
+}
