@@ -1,0 +1,31 @@
+.BoxMenuDate{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  left: 27.6vw;
+  top: -10vmin;
+  width: 45vw;
+  height: 36vh;
+
+  background-color: #ffffff;
+  border-radius: 0.63vmin;
+  box-shadow: 0.36vmin 0.36vmin 1.8vmin rgba(15, 15, 15, 0.411) ;
+  z-index: -1;
+
+  transform: scale(0);
+}
+.BoxMenuDate:hover{
+  box-shadow: 0.63vmin 0.63vmin 2.1vmin rgba(15, 15, 15, 0.87) ;
+
+}
+
+@media only screen and ( max-width: 600px ){
+  .BoxMenuDate{
+    width: 81vw;
+    height: 36vh;
+    left: 9vw;
+  }
+}

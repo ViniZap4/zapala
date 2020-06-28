@@ -15,7 +15,7 @@ export default function BoxMenuItem(props) {
   useEffect(()=>{
     if(StateMenu)
       setStyleBox({
-        right:" 0.9vw",
+        right:" 0.9vmax",
         top:"10vmin",
         opacity: 1,
         zIndex:5,

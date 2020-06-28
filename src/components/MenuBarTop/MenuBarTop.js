@@ -4,6 +4,8 @@ import './MenuBarTop.css'
 
 //import components
 import Logo from '../Logo/Logo'
+import Date from '../Date/Date'
+import BoxMenuDate from '../BoxMenuDate/BoxMenuDate'
 import IconMenu from '../IconMenu/IconMenu'
 import BoxMenuItem from '../BoxMenuItem/BoxMenuItem'
 
@@ -24,10 +26,11 @@ export default function MenuBarTop(props) {
         />
         Zapalá
       </div>
-      <div>
-        data
+      <div className="MenuTopBarDate">
+        <Date />
       </div>
       <div className="MenuBarTopMenu">
+        
         <IconMenu 
          width={sizeMenu}
          height={sizeMenu}
@@ -35,8 +38,8 @@ export default function MenuBarTop(props) {
          close={message}
         />
       </div>
+      <BoxMenuDate />
       <BoxMenuItem />
     </div>
   );
 }
-

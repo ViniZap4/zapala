@@ -1,3 +1,41 @@
+.MenuIcon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+/* background-color: aqua; */
+  cursor: pointer;
+  
+}
+.TitleMenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2.7vmin;
+  /* background-color: rgb(173, 233, 233); */
+
+}
+
+.UnderLineMenu{
+  display: flex;
+  margin-top: 0.27vmin;
+  width:0%;
+  height: 0.45vh;
+  background-color: #008888;
+  box-shadow: 0vmin 0vmin 1.8vmin #008888;
+  border-radius: 90vmin;
+}
+.MenuIcon:hover .UnderLineMenu{
+  width:108%;
+  height: 0.45vh;
+}
+.MenuIcon:hover .TitleMenu{
+  color: #008888;
+}
+
+
+/* ----------- Icon Menu ------- */
 .IconMenu{
   display: flex;
   flex-direction: column;
@@ -7,8 +45,10 @@
   width: 9vmin;
   height: 9vmin;
   cursor: pointer;
+  margin-left: 0.9vw;
 }
-.IconMenu:hover {
+
+.MenuIcon:hover .IconMenu{
   transform: scale(1.1);
 }
 .ElementIconMenu{
@@ -21,13 +61,13 @@
 
 }
 
-.IconMenu:hover #ElementIconMenustyle0{
+.MenuIcon:hover #ElementIconMenustyle0{
   animation:IconMenuHover0 1.26s linear infinite ;
 }
-.IconMenu:hover #ElementIconMenustyle1{
+.MenuIcon:hover #ElementIconMenustyle1{
   animation:IconMenuHover1 1.26s linear infinite ;
 }
-.IconMenu:hover #ElementIconMenustyle2{
+.MenuIcon:hover #ElementIconMenustyle2{
   animation:IconMenuHover2 1.26s linear infinite ;
 }
 
@@ -57,6 +97,15 @@
 #ElementIconMenustyleClick{
   animation: IconMenuHover1 0.9s linear;
   width: 110%;
+  background-color: #008888;
+  box-shadow: 0vmin 0vmin 0.63vmin #008888;  
+}
+.MenuIcon:hover  #ElementIconMenustyleClick{
+  box-shadow: 0vmin 0vmin 0.9vmin #008888;  
+}
 
-  
+@media only screen and (max-width:600px){
+  .TitleMenu{
+    font-size: 0vmin;
+  }
 }

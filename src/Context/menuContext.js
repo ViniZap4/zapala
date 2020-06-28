@@ -4,12 +4,15 @@ const MenuContext = createContext()
 
 export default function MenuContextProvider(props) {
   const [StateMenu, setStateMenu] = useState(false)
+  const [StateDate, setStateDate] = useState(false)
 
   return (
     <MenuContext.Provider
       value={{
        StateMenu, 
-        setStateMenu
+        setStateMenu,
+        StateDate,
+        setStateDate
       }}
     >
       {props.children}
@@ -22,10 +25,14 @@ export function useMenubarContext(){
   if(!context) throw console.error("The useMenubarContext need insize in MenuContextProvider ");
   const {
     StateMenu,
-    setStateMenu
+    setStateMenu,
+    StateDate,
+    setStateDate
   } = context
   return{
     StateMenu,
-    setStateMenu
+    setStateMenu,
+    StateDate,
+    setStateDate
   }
 }
