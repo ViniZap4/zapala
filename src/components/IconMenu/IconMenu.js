@@ -41,7 +41,7 @@ export default function IconMenu(props) {
       })
       setStateMenu(true)
       setStyleText({
-        Text:{ color:' #008888'},
+        // Text:{ color:' #008888'},
         underline:{width:"18%"}
       })
       SetTitleIcon("Feixar Menu")

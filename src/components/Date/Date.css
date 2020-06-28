@@ -14,12 +14,11 @@
   justify-content: center;
   width: max-content;
   font-size: 2.7vmin;
-
-
 }
-.DateMenuTop:hover .DateMenuTopText{
+
+/* .DateMenuTop:hover .DateMenuTopText{
   color:#008888;
-}
+} */
 
 .UnderLineDate{
   display: flex;

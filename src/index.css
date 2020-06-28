@@ -34,3 +34,10 @@ a{
   text-decoration: none;
   color: #000;
 }
+
+/* --------------- zpala style --------- */
+
+::selection{
+  color: #fff;
+  background-color: #008888;
+}

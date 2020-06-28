@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './Date.css'
 
@@ -16,20 +16,24 @@ export default function Date(props) {
     underLineDate:{}
   })
 
-  function openBoxMenuDate(){
-    if(!StateDate){
-      setStateDate(true)
+  useEffect(()=>{
+    if(StateDate){
       setStyleAll({
-        DateMenuTopText:{ color:' #008888', textShadow: '0vmin 0vmin 1.8vmin #008888',},
         underLineDate:{width:"18%"}
       })
       
     }else{
-      setStateDate(false)
       setStyleAll({
-        DateMenuTopText:{},
         underLineDate:{}
       })
+    }
+  },[StateDate])
+
+  function openBoxMenuDate(){
+    if(!StateDate){
+      setStateDate(true)  
+    }else{
+      setStateDate(false)
     }
   }
 

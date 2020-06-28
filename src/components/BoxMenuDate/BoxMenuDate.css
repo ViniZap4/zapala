@@ -22,10 +22,19 @@
 
 }
 
+.BoxMenuDateCloseButton{
+  display: flex;
+  position: absolute;
+  right: 1.8%;
+  top:3.6%;
+  width: 3.6vmin;
+  height:3.6vmin;
+}
+
 @media only screen and ( max-width: 600px ){
   .BoxMenuDate{
-    width: 81vw;
+    width: 72vw;
     height: 36vh;
-    left: 9vw;
+    left: 13.5vw;
   }
 }

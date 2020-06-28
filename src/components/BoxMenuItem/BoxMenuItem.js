@@ -50,9 +50,7 @@ export default function BoxMenuItem(props) {
      <ItemBoxMenuItem href="#">
         Animações
      </ItemBoxMenuItem >
-     <ItemBoxMenuItem href="#">
-        Música
-     </ItemBoxMenuItem >
+
     </div>
   );
 }

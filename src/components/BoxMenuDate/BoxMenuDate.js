@@ -5,11 +5,14 @@ import './BoxMenuDate.css'
 //import content
 import ContentBoxMenuDate from './ContentBoxMenuDate/ContentBoxMenuDate'
 
+//import components 
+import CloseIcon from '../Icons/CloseIcon/CloseIcon'
+
 // import Context
 import { useMenubarContext } from '../../Context/menuContext'
 
 export default function BoxMenuDate(props) {
-  const { StateDate } = useMenubarContext()
+  const { StateDate, setStateDate } = useMenubarContext()
 
   const [BoxMenuDateStyle,setBoxMenuDateStyle ] = useState({})
 
@@ -31,6 +34,9 @@ export default function BoxMenuDate(props) {
   return (
     <div style={BoxMenuDateStyle} className="BoxMenuDate">
        <ContentBoxMenuDate />
+       <span className="BoxMenuDateCloseButton" onClick={() => setStateDate(false)} >
+        <CloseIcon  />
+       </span>
     </div>
   );
 }

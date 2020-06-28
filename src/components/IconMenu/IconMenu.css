@@ -31,7 +31,7 @@
   height: 0.45vh;
 }
 .MenuIcon:hover .TitleMenu{
-  color: #008888;
+  /* color: #008888; */
 }
 
 
@@ -97,11 +97,11 @@
 #ElementIconMenustyleClick{
   animation: IconMenuHover1 0.9s linear;
   width: 110%;
-  background-color: #008888;
-  box-shadow: 0vmin 0vmin 0.63vmin #008888;  
+  
 }
 .MenuIcon:hover  #ElementIconMenustyleClick{
-  box-shadow: 0vmin 0vmin 0.9vmin #008888;  
+  /* box-shadow: 0vmin 0vmin 0.9vmin #008888; */
+  background-color: #008888;
 }
 
 @media only screen and (max-width:600px){
