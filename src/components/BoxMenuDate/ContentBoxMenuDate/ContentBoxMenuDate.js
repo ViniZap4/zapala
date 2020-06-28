@@ -20,7 +20,7 @@ export default function ContentBoxMenuDate(props) {
       </div>
       <span className="ContentBoxMenuDatediv"></span>
       <div className="ContentBoxMenuDateCalendar">
-        Calendar in development
+        Calendário em desenvolvimento.
       </div>
     </div>
   );

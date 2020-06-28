@@ -16,7 +16,7 @@ export default function BoxMenuItem(props) {
     if(StateMenu)
       setStyleBox({
         right:" 0.9vmax",
-        top:"10vmin",
+        top:"5.58vmax",
         opacity: 1,
         zIndex:5,
         transform: "scale(1)",

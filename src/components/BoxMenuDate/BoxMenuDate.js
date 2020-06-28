@@ -20,7 +20,7 @@ export default function BoxMenuDate(props) {
   useEffect(()=>{
     if(StateDate)
     setBoxMenuDateStyle({
-        top:"10vmin",
+        top:"5.58vmax",
         opacity: 1,
         zIndex:4,
         transform: "scale(1)",
