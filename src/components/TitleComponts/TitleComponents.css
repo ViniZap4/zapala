@@ -1,0 +1,23 @@
+.TitleComponents{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: fixed;
+  color: #000;
+  font-size: 2.7vmin;
+
+  transition: 0.09s;
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 0.45vmin;
+  box-shadow: 0.36vmin 0.36vmin 1.8vmin 0.9vmin rgba(136, 136, 136, 0.966);
+  transform: scale(0);
+  opacity: 0.81;
+}
+
+.TitleComponentsText{
+  display: flex;
+  margin: 0.63vh 0.63vw;
+  font-size: 1.26vmin;
+}

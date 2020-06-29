@@ -2,8 +2,11 @@ import React from 'react';
 
 import './ContentBoxMenuDate.css'
 
+import Calendar from './Calendar'
+
 //import contents
 import { UseDate } from '../../../Context/DateContext'
+
 
 export default function ContentBoxMenuDate(props) {
   const { date, mounthPlus, year, week, hours , min, sec} = UseDate()
@@ -20,7 +23,7 @@ export default function ContentBoxMenuDate(props) {
       </div>
       <span className="ContentBoxMenuDatediv"></span>
       <div className="ContentBoxMenuDateCalendar">
-        Calendário em desenvolvimento.
+        <Calendar />
       </div>
     </div>
   );

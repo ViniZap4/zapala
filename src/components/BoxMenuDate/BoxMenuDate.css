@@ -31,10 +31,18 @@
   height:3.6vmin;
 }
 
+@media only screen and ( max-width: 1200px ){
+  .BoxMenuDate{
+   
+    height: 49.5vh;
+   
+  }
+}
+
 @media only screen and ( max-width: 600px ){
   .BoxMenuDate{
     width: 72vw;
-    height: 36vh;
+    height: 39.6vh;
     left: 13.5vw;
   }
 }

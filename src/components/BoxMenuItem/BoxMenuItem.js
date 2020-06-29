@@ -29,11 +29,11 @@ export default function BoxMenuItem(props) {
   return (
     <div className="BoxMenuItem" style={styleBox}>
       
-     <ItemBoxMenuItem href="#">
+     <ItemBoxMenuItem href="/">
        Home
      </ItemBoxMenuItem>
      <ItemBoxMenuItem href="#">
-        Minha galeria
+        Imagens
      </ItemBoxMenuItem>
      <ItemBoxMenuItem href="#">
         Artigos
@@ -50,6 +50,7 @@ export default function BoxMenuItem(props) {
      <ItemBoxMenuItem href="#">
         Animações
      </ItemBoxMenuItem >
+  
 
     </div>
   );

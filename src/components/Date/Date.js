@@ -11,6 +11,7 @@ import { UseDate } from '../../Context/DateContext'
 export default function Date(props) {
   const { weekCut, date, mounthPlusCut , hours, min } = UseDate()
   const { StateDate,setStateDate  } = useMenubarContext()
+
   const [StyleAll, setStyleAll] = useState({
     DateMenuTopText:{ },
     underLineDate:{}
@@ -37,9 +38,14 @@ export default function Date(props) {
     }
   }
 
+
+
+  
+
   return (<>
     <span className="DateMenuTop"
       onClick={openBoxMenuDate}
+      
     >
       <span className="DateMenuTopText" style={StyleAll.DateMenuTopText}>
         {weekCut}, {date} de {mounthPlusCut} {hours}:{min}

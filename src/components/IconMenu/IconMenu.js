@@ -5,14 +5,13 @@ import './IconMenu.css'
 //import contexts
 import {useMenubarContext} from '../../Context/menuContext'
 
-
 export default function IconMenu(props) {
   const { StateMenu, setStateMenu } = useMenubarContext()
   const [ElementIconMenu0, setElementIconMenu0 ] = useState({style:{},id:"ElementIconMenustyle0"})  
   const [ElementIconMenu1, setElementIconMenu1 ] = useState({style:{},id:"ElementIconMenustyle1"})
   const [ElementIconMenu2, setElementIconMenu2 ] = useState({style:{},id:"ElementIconMenustyle2"})
   const [StyleText, setStyleText] = useState({Text:{},underline:{}})
-  const [TitleIcon, SetTitleIcon ] = useState("Abrir Menu")
+  // const [TitleIcon, SetTitleIcon ] = useState("Abrir Menu")
   
   function SwitchControllMenu(){
     if(!StateMenu){
@@ -44,13 +43,13 @@ export default function IconMenu(props) {
         // Text:{ color:' #008888'},
         underline:{width:"18%"}
       })
-      SetTitleIcon("Feixar Menu")
+      // SetTitleIcon("Feixar Menu")
     }else{
       setElementIconMenu0({style:{},id:"ElementIconMenustyle0"})
       setElementIconMenu1({style:{},id:"ElementIconMenustyle1"})
       setElementIconMenu2({style:{},id:"ElementIconMenustyle2"})
       setStateMenu(false)
-      SetTitleIcon("Abrir Menu")
+      // SetTitleIcon("Abrir Menu")
       setStyleText({
         Text:{},
         underline:{}
@@ -58,19 +57,19 @@ export default function IconMenu(props) {
     }
   }
 
-
+  
 
 
   return (<>
-    <div className="MenuIcon" onClick={SwitchControllMenu} >
+    <div className="MenuIcon" onClick={SwitchControllMenu} 
+  
+    >
       <div className="TitleMenu" style={StyleText.Text} >Menu
         <span className="UnderLineMenu" style={StyleText.underline} ></span>
       </div>
       <div className="IconMenu"
 
         onClick={SwitchControllMenu}
-
-        title={TitleIcon}
 
         style={{
           width:props.width,
