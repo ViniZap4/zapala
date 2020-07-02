@@ -30,10 +30,10 @@ export default function BoxMenuItem(props) {
     <div className="BoxMenuItem" style={styleBox}>
       
      <ItemBoxMenuItem href="/">
-       Home
+       Ínicio
      </ItemBoxMenuItem>
-     <ItemBoxMenuItem href="#">
-        Imagens
+     <ItemBoxMenuItem href="/gallery">
+        Galeria
      </ItemBoxMenuItem>
      <ItemBoxMenuItem href="#">
         Artigos

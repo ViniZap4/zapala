@@ -1,0 +1,32 @@
+#GalleryPage{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* background-color: rgb(166, 139, 192); */
+
+}
+.GalleryContentPage{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  width: 91.8%;
+  height: 90%;
+  margin-top: 9vh;
+}
+
+.GalleryContentTitlePage{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 4.5vmin;
+}
+
+.GalleryItemContent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3.6vh;
+}

@@ -1,13 +1,17 @@
-import React from 'react';
+import React  from 'react';
 
 import './CloseIcon.css'
 
 export default function CloseIcon(props) {
+  const CloseIconLineStyle = {
+    backgroundColor:`${props.color}`
+  }
+  
   return (
     <div className="CloseIcon" onClick={props.onClick}>
-      <span className="CloseIconLine" id="CloseIconLine0"></span>
-      <span className="CloseIconLine" id="CloseIconLine1"></span>
-      <span className="CloseIconUnderLine"></span>
+      <span className="CloseIconLine" style={CloseIconLineStyle} id="CloseIconLine0"></span>
+      <span className="CloseIconLine" style={CloseIconLineStyle} id="CloseIconLine1"></span>
+      <span className="CloseIconUnderLine" style={CloseIconLineStyle}></span>
     </div>
   );
 } 

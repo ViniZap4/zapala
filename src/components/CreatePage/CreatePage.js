@@ -16,7 +16,7 @@ export default function CreatePage(props) {
     <TitleComponentsProvider >
       <DateProvider>
         <MenuContextProvider>
-          <Content> {props.children} </Content>
+          <Content name={props.id}> {props.children} </Content>
         </MenuContextProvider>
       </DateProvider>
     </ TitleComponentsProvider>
@@ -27,7 +27,7 @@ function Content (props){
   const { setPositionMouse } = UseTitleComponentsContext()
 
   return(
-    <div  id={props.id} className="CreatePage" onMouseMove={(e) => setPositionMouse({ x:e.pageX, y:e.pageY })}>
+    <div id={props.name} className="CreatePage" onMouseMove={(e) => setPositionMouse({ x:e.pageX, y:e.pageY })}>
       <MenuBarTop />
       {props.children}
       <TitleComponents />

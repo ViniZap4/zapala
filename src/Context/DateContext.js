@@ -12,15 +12,17 @@ export default function DateProvider(props) {
   var mes = ['Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
   var mesCut = ['Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
 
-  const [week, setWeek] = useState("none")
-  const [weekCut, setWeekCut] = useState("none")
-  const [mounthPlus, setMonthPlus] = useState("none")
-  const [mounthPlusCut, setMonthPlusCut] = useState("none")
-  const [mounth, setMonth] = useState(0)
-  const [year, setYear] = useState(0)
-  const [date, setDate] = useState (0)
-  const [hours, setHours] = useState(0)
-  const [min, setMin] = useState(0)
+  const inid = new Date() 
+
+  const [week, setWeek] = useState(semana[inid.getDay()])
+  const [weekCut, setWeekCut] = useState(semanaCut[inid.getDay()])
+  const [mounthPlus, setMonthPlus] = useState(mes[inid.getMonth()-1])
+  const [mounthPlusCut, setMonthPlusCut] = useState(mesCut[inid.getMonth()-1])
+  const [mounth, setMonth] = useState(leftPad(inid.getMonth()+1,2))
+  const [year, setYear] = useState(leftPad(  inid.getFullYear(), 4))
+  const [date, setDate] = useState (leftPad( inid.getDate(), 2))
+  const [hours, setHours] = useState(leftPad( inid.getHours(), 2))
+  const [min, setMin] = useState(leftPad( inid.getMinutes(), 2))
   const [sec, setSec] = useState(0)
 
   // update dates

@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  background-color: #ccc;
+  background-color: #e3e3e3;
 }
 
 code {
@@ -26,6 +26,10 @@ code {
   font-family: 'Comfortaa';
   src: url(./fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf)
 }
+@font-face{
+  font-family: 'Belgrano';
+  src: url(./fonts/Belgrano/Belgrano-Regular.ttf)
+}
 
 
 /* ----- set style tags --------- */
@@ -35,9 +39,25 @@ a{
   color: #000;
 }
 
+li{
+  list-style: none;
+}
+
 /* --------------- zpala style --------- */
 
 ::selection{
   color: #fff;
   background-color: #008888;
+}
+
+/* ---------animations ------------ */
+@keyframes init{
+  from{
+    transform: scale(0);
+    opacity: 0;
+    
+  }to{
+    transform: scale(1);
+    opacity: 1;
+  }
 }
