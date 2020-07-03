@@ -5,12 +5,18 @@
 .ItemDescriptionType{
   color: #008888;
   font-weight: 600;
+  font-size: 2.7vmin;
   margin-right: 0.54vw;
-  font-size: 0vmin;
+  cursor: text;
+  font-family: 'belgrano';
+  animation: initBoxgalleyFont 0.9s linear;
 }
 
 .ItemDescriptionValue{
-  font-size: 0vmin;
-  transform: scale(0.4);
-  color: #383838;
+  font-size: 2.16vmin;
+  /* transform: scale(0.4); */
+  color: #535353;
+  cursor: text;
+  font-family: 'belgrano';
+  animation: initBoxgalleyFont 0.9s linear;
 }

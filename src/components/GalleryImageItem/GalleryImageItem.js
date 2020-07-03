@@ -10,15 +10,50 @@ import AuthorIcon from '../Icons/AuthorIcon/AuthorIcon'
 
 
 //import data 
-import { UseDate } from '../../Context/DateContext'
 import { defaultStyle, OpenDesktop,OpenMobile } from './ValuesStyleAll'
 
 export default function GalleryImageItem(props) {
-  const { sec } = UseDate()
   const [SwitchStateBox,setSwitchStateBox ] = useState(false)
   const [OpenStyle, setOpenStyle ] = useState()
   const [StyleAll, setStyleAll] = useState(defaultStyle)
+  const [ContentInfo,setContentInfo ] = useState(<></>)
   
+
+  const contentInfoOpen = (<>
+    <div>
+      <h2 className="GalleryImageItemContentInfoDescription" style={StyleAll.titleText} >
+        Descricão: 
+      </h2>
+      <span className="GalleryImageItemContentInfoDescriptionText">
+        {props.children}    
+      </span>
+    </div>
+    <ItemDescription info="Criação">
+      {props.creation}
+    </ItemDescription>
+    <ItemDescription info="Envio">
+      {props.upload}
+    </ItemDescription>
+    <ItemDescription info="Resolusão">
+      {props.resolution}
+    </ItemDescription>  
+    {/* <ItemDescription info="temanho">
+      {props.size}
+    </ItemDescription> */}
+    <ItemDescription info="Author">
+      {props.author}
+    </ItemDescription>
+    {/* <ItemDescription info={props.licence}>
+      {props.licenceText}
+    </ItemDescription> */}
+    <a href={props.srcAuthor} rel="noopener noreferrer" target="_black" className="GalleryImageItemContentInfoAuthor">
+      <div className="GalleryImageItemContentInfoNameAuthor">
+        <span className="GalleryImageItemContentInfoNameText"><AuthorIcon size="3.6vmin" /> {props.author} </span>
+        <span className="GalleryImageItemContentInfoNameUnderline"></span>
+      </div>
+    </a>
+  </>)
+
 
   useEffect(()=>{
     if(window.innerWidth >= window.innerHeight){
@@ -26,21 +61,24 @@ export default function GalleryImageItem(props) {
     }else{
       setOpenStyle(OpenMobile)
     }
-  },[sec])
+  },[])
  
  
 
   useEffect(()=>{
     if(SwitchStateBox){
       setStyleAll(OpenStyle)
+      setContentInfo(contentInfoOpen)
     }else{
       setStyleAll(defaultStyle) 
+      setContentInfo(<></>)
     }
-  },[SwitchStateBox, sec])
+  },[SwitchStateBox])
 
   
   function OpenGallery(){
     if(!SwitchStateBox) setSwitchStateBox(true)
+    
   }
   function CloseGallery(){
     setSwitchStateBox(false)
@@ -49,14 +87,14 @@ export default function GalleryImageItem(props) {
 
   function ItemDescription(props) {
     return (    
-      <li className="ItemDescription" >
-        <span className="ItemDescriptionType" style={StyleAll.sizeFontMin} >
+      <span className="ItemDescription" >
+        <span className="ItemDescriptionType" >
           {props.info}:
         </span>
-        <span  className="ItemDescriptionValue" style={StyleAll.sizeFontMin} >
+        <span  className="ItemDescriptionValue"  >
           {props.children}
         </span>
-      </li>
+      </span>
     );
   }
 
@@ -65,7 +103,7 @@ export default function GalleryImageItem(props) {
       <div className="GalleryImageItemArea" style={StyleAll.area}>
         <span
           className="GalleryImageItemImg"
-          style={StyleAll.img}
+          style={{backgroundImage:`url(${props.src})`}}
         ></span>
       </div>
       <div className="GalleryImageItemContent" style={StyleAll.content}>
@@ -82,44 +120,10 @@ export default function GalleryImageItem(props) {
             </span>
           </span>
         </div>
-        <div className="GalleryImageItemContentInfoArea"  style={StyleAll.underline}>
-          <div className="GalleryImageItemContentDescription" style={StyleAll.info}>     
-            <span className="ItemDescriptionType" style={StyleAll.sizeFont} >
-              Descrição:
-            </span>
-              Arte abstrada, ilustrativa, Usada como logo de Zapalá, representando a dúvuda e a sabedoria, inspirada no Triskle e Olho de Hórus, mas tendo elegância, complexidade, e ao mesmo tempo sendo simples e moderna.
-          </div>
-          <div className="GalleryImageItemContentAutor" style={StyleAll.sizeFont}>
-            <ul className="GalleryImageItemContentDescriptionArea">              
-              <ItemDescription info="Criação">
-                2020
-              </ItemDescription>
-              <ItemDescription info="Envio">
-                1 de Julho de 2020
-              </ItemDescription>
-              <ItemDescription info="Resolusão">
-                1280 x 1280
-              </ItemDescription>
-              <ItemDescription info="Direito Moral">
-                Vinicius Zapalá dos Santos
-              </ItemDescription>
-              <ItemDescription info="Direito Patrimonial">
-                Vinicius Zapalá dos Santos
-              </ItemDescription>
-              <ItemDescription info="Licença:">
-                Restrito de uso apenas a Vinicius Zapalá dos Santos.
-              </ItemDescription>
-            </ul>
-            <span className="GalleryImageItemContentAutorTilte" style={StyleAll.sizeFont}>
-              <span className="GalleryImageItemContentAutorTilteText" style={StyleAll.sizeFont}> 
-                <AuthorIcon size={StyleAll.sizeAuthorIcon}  />
-                Vinicius Zapalá dos Santos
-              </span>
-              <span className="GalleryImageItemContentAutorTilteUnderline" style={StyleAll.underline}></span>
-             </span>
-          </div>
+        <div className="GalleryImageItemContentInfoArea">
+          {ContentInfo} 
         </div>
       </div>
     </div>
   );
-}  
+} 
