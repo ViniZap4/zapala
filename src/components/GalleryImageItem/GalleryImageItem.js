@@ -109,7 +109,7 @@ export default function GalleryImageItem(props) {
       <div className="GalleryImageItemContent" style={StyleAll.content}>
         <div className="GalleryImageItemContentTitle"style={StyleAll.title}>
           <span className="GalleryImageItemContentTitleName"><span style={StyleAll.titleIcon} className="GalleryImageItemContentTitleIcon">➤</span> 
-            Zapalá
+            {props.name}
           </span>
           <span className="GalleryImageItemContentTitleButtomArea">
             <span className="GalleryImageItemContentTitleCloseWhite"  onClick={CloseGallery}>

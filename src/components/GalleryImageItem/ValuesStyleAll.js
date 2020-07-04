@@ -19,9 +19,9 @@ export const OpenDesktop = {
     boxShadow:" 1.8vmin 1.8vmin 3.6vmin #6d6d6dea",
 
   },
-  area:{width: '49%', height:" 100%",},
+  area:{width: '49%', height:" 100%",borderRadius:"0.63vmin 0.9vmin 0.9vmin 0.63vmin", boxShadow:"0.36vmin 0.18vmin 1.8vmin #000000c7", marginRight:"0.36vw"},
   content:{ width:"61%" },
-  title:{borderRadius:'0vmin 0.63vmin 0vmin 0.9vmin', marginBottom:"0.9vh",height:"6.3vh" },
+  title:{borderRadius:'0vmin 0.63vmin 0vmin 0.9vmin', marginBottom:"0.9vh",height:"6.3vh", boxShadow:"-0.36vmin 0.18vmin 1.8vmin #000000c7" },
   titleIcon:{fontSize:"0vmin", width:0},
   infoArea:{},
 

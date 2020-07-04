@@ -14,7 +14,7 @@
  
 }
 .GalleryImageItem:hover{
-  box-shadow: 0vmin 0vmin 2.7vmin -0.18vmin #428888f1;
+  box-shadow: 0vmin 0vmin 2.7vmin -0.18vmin #053333f1;
 
 }
 
@@ -23,6 +23,8 @@
   display: flex;
   width: 100%;
   height: 90%;
+  border-radius: 0.63vmin 0.63vmin 0vmin 0vmin;
+  overflow: hidden;
 }
 .GalleryImageItemImg{
   display: flex;
@@ -32,7 +34,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 0.63vmin;
+
 }
 /* --------- content -------  */
 .GalleryImageItemContent{
