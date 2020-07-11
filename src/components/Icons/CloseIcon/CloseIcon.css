@@ -17,6 +17,7 @@
   height: 9%;
   border-radius: 2.7vmin;
   background-color: #000000;
+ 
 }
 .CloseIcon:hover .CloseIconLine{
   background-color: #008888;

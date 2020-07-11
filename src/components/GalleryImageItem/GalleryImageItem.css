@@ -84,14 +84,9 @@
   top:1.8%;
   width: 3.6vmin;
   height:3.6vmin;
+  color: #000000;
 }
-.GalleryImageItemContentTitleClose{
-  position: absolute;
-  right: 1.8%;
-  top:1.8%;
-  width: 0vmin;
-  height:0vmin;
-}
+
 
 /* ----------- Info -------- */
 .GalleryImageItemContentInfoArea{

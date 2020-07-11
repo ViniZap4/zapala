@@ -113,11 +113,9 @@ export default function GalleryImageItem(props) {
           </span>
           <span className="GalleryImageItemContentTitleButtomArea">
             <span className="GalleryImageItemContentTitleCloseWhite"  onClick={CloseGallery}>
-              <CloseIcon  color="#fff" />
+              <CloseIcon color={StyleAll.CLoseIcon.color} shadowSize={StyleAll.CLoseIcon.shadowSize} shadowColor={StyleAll.CLoseIcon.shadowColor} />
             </span>
-            <span className="GalleryImageItemContentTitleClose" style={StyleAll.close}  onClick={CloseGallery}>
-              <CloseIcon   />
-            </span>
+        
           </span>
         </div>
         <div className="GalleryImageItemContentInfoArea">

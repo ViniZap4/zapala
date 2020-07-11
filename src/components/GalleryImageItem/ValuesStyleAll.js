@@ -3,7 +3,8 @@ export const defaultStyle = {
   area:{},
   content:{},
   title:{},
-  close:{},
+  CLoseIcon:{color:"transparent", shadowSize:"", shadowColor:""}
+ 
 }
 
 export const OpenDesktop = {
@@ -24,6 +25,8 @@ export const OpenDesktop = {
   title:{borderRadius:'0vmin 0.63vmin 0vmin 0.9vmin', marginBottom:"0.9vh",height:"6.3vh", boxShadow:"-0.36vmin 0.18vmin 1.8vmin #000000c7" },
   titleIcon:{fontSize:"0vmin", width:0},
   infoArea:{},
+  CLoseIcon:{color:"#fff", shadowSize:"", shadowColor:""}
+
 
   
 }
@@ -36,13 +39,14 @@ export const OpenMobile = {
     left:"4.5vw",
     width:'90vw',
     height:'81vh',
-
+    
   },
   area:{width: '100%', height:" 100%",},
   content:{ width:"100%" },
   title:{borderRadius:'0vmin', marginBottom:"3.6vh",height:"3.6vh" },
   titleIcon:{fontSize:"0vmin", width:0},
-  close:{width: "3.6vmin",height:"3.6vmin"},
   infoArea:{},
+  CLoseIcon:{color:"#fff", shadowSize:"0vmin 0vmin 0.36vmin 0.09vmin ", shadowColor:"#008888"}
+
 
 }

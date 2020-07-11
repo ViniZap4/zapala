@@ -4,7 +4,8 @@ import './CloseIcon.css'
 
 export default function CloseIcon(props) {
   const CloseIconLineStyle = {
-    backgroundColor:`${props.color}`
+    backgroundColor:`${props.color}`,
+    boxShadow: `${props.shadowSize}  ${props.shadowColor}`   
   }
   
   return (
