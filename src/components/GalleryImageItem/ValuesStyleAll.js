@@ -1,5 +1,5 @@
 export const defaultStyle = {
-  master:{animation:"init 0.54s linear"},
+  master:{animation:"init 0.45s linear"},
   area:{},
   content:{},
   title:{},
