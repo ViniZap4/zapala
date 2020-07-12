@@ -11,7 +11,7 @@
 }
 
 .CloseIconLine{
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   width: 90%;
   height: 9%;
@@ -26,28 +26,33 @@
 
 #CloseIconLine0{
   transform: rotate(45deg);
+  transform-origin: 33% 106%;
 }
 #CloseIconLine1{
   transform: rotate(-45deg);
+  transform-origin: 53% 77%;
 }
 .CloseIcon:hover #CloseIconLine0{
   transform: rotate(-45deg);
+  transform-origin:68% 129%
 }
 .CloseIcon:hover #CloseIconLine1{
   transform: rotate(45deg);
+  transform-origin:44% 70%;
 }
 .CloseIconUnderLine{
   display: flex;
-  position: absolute;
-  bottom: 0%;
-  width: 0%;
+  /* justify-self: flex-end; */
+
+  /* position: absolute; */
+  margin-top: 9%;
   height: 5.4%;
   border-radius: 9vmin;
   background-color: #008888;
 }
 
 .CloseIcon:hover .CloseIconUnderLine{
-  width: 108%;
+  /* width: 108%; */
   box-shadow: 0vmin 0vmin 1.8vmin #008888;
 }
 

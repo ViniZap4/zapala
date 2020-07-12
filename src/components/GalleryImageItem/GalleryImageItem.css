@@ -3,39 +3,82 @@
   flex-direction:column;
   flex-wrap: nowrap;
   
-  width: 15vmax;
-  height: 18vmax;
-
+  min-width: 15vmax;
+  min-height: 18vmax;
+  flex: 1 1;
   margin: 1.8vh 1.26vw;
-  border-radius: 0.63vmin;
+  border-radius: 9vmin;
+
   background-color: #fff;
   box-shadow: 0vmin 0vmin 3.6vmin 1.8vmin #c7c7c7ea;
   cursor: pointer;
  
 }
 .GalleryImageItem:hover{
-  box-shadow: 0vmin 0vmin 2.7vmin -0.18vmin #053333f1;
-
+  box-shadow: 0vmin 0vmin 2.7vmin 0.18vmin #053333f1;
+  border-radius: 0.63vmin;
 }
 
-
+/* ----------- item area img control -------- */
 .GalleryImageItemArea{
   display: flex;
   width: 100%;
   height: 90%;
   border-radius: 0.63vmin 0.63vmin 0vmin 0vmin;
   overflow: hidden;
+
+
 }
 .GalleryImageItemImg{
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   width: 100%;
   height: 100%;
   
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 
 }
+
+.GalleryImageItem:hover .GalleryImageItemImg{
+  width: 117%;
+  height: 117%;
+} 
+
+/* ------- control area -------- */
+.GalleryImageIteControlArea{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.8vmin 1.8vmin;
+  border-radius: 0.9vmin;
+  background-color: #008888;
+  box-shadow: 0.36vmin 0.36vmin 1.8vmin #141414;
+  
+}
+
+.GalleryImageIteControlFullScreenArea{
+  display: flex;
+  cursor: pointer;
+  margin: 0.63vmin;
+  width:  4.5vmin;
+  height: 4.5vmin;
+  
+}
+
+/* ------butotm Area ------- */
+
+
+.GalleryImageItemContentTitleClose{
+  position: absolute;
+  right: 1.8%;
+  top:0.9%;
+  width: 4.5vmin;
+  height:4.5vmin; 
+}
+
 /* --------- content -------  */
 .GalleryImageItemContent{
   display: flex;
@@ -60,7 +103,7 @@
   width: 0vmin;
   margin: 1.16vmin 1.8vmin;
   margin-right: 0.36vw;
-  font-size: 2.16vmin;
+  font-size: 2.07vmin;
   transform: scale(0);
 }
 .GalleryImageItem:hover .GalleryImageItemContentTitleIcon{
@@ -74,18 +117,9 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  margin: 0.9vh 0.72vw;
 }
-/* ------butotm Area ------- */
 
-
-.GalleryImageItemContentTitleCloseWhite{
-  position: absolute;
-  right: 1.8%;
-  top:1.8%;
-  width: 3.6vmin;
-  height:3.6vmin;
-  color: #000000;
-}
 
 
 /* ----------- Info -------- */
@@ -177,3 +211,12 @@
   }
 
 }
+
+/* ---------- media --------------- */
+
+@media only screen and (max-width:700px){
+  .GalleryImageItemContentTitleClose{
+    width: 4.5vmin;
+    height:4.5vmin; 
+  }
+} 

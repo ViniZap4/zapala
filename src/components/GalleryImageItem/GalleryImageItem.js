@@ -7,21 +7,26 @@ import './ItemDescription.css'
 //import component
 import CloseIcon from '../Icons/CloseIcon/CloseIcon'
 import AuthorIcon from '../Icons/AuthorIcon/AuthorIcon'
+import FullScreenIcon from '../Icons/FullScreen/FullScreenIcon'
 
 
 //import data 
-import { defaultStyle, OpenDesktop,OpenMobile } from './ValuesStyleAll'
+import { defaultStyle, OpenDesktop,OpenMobile, OpenImg } from './ValuesStyleAll'
 
 export default function GalleryImageItem(props) {
   const [SwitchStateBox,setSwitchStateBox ] = useState(false)
-  const [OpenStyle, setOpenStyle ] = useState()
+  const [SwitchStateImg,setSwitchStateImg ] = useState(false)
+  const [OpenStyle, setOpenStyle ] = useState(OpenDesktop)
   const [StyleAll, setStyleAll] = useState(defaultStyle)
   const [ContentInfo,setContentInfo ] = useState(<></>)
+  const [GalleryImageItemImgStyle,setGalleryImageItemImgStyle ] = useState({
+    backgroundImage:`url(${props.src})`
+  })
   
 
   const contentInfoOpen = (<>
     <div>
-      <h2 className="GalleryImageItemContentInfoDescription" style={StyleAll.titleText} >
+      <h2 className="GalleryImageItemContentInfoDescription" >
         Descricão: 
       </h2>
       <span className="GalleryImageItemContentInfoDescriptionText">
@@ -55,33 +60,54 @@ export default function GalleryImageItem(props) {
   </>)
 
 
-  useEffect(()=>{
-    if(window.innerWidth >= window.innerHeight){
-      setOpenStyle(OpenDesktop)
-    }else{
-      setOpenStyle(OpenMobile)
-    }
-  },[])
+  // useEffect(()=>{
+  //   if(window.innerWidth >= window.innerHeight){
+  //     setOpenStyle(OpenDesktop)
+  //   }else{
+  //     setOpenStyle(OpenMobile)
+  //   }
+  // },[])
  
- 
-
-  useEffect(()=>{
-    if(SwitchStateBox){
+   
+  function OpenGallery(){
+    if(!SwitchStateBox){
+      setSwitchStateBox(true)
       setStyleAll(OpenStyle)
       setContentInfo(contentInfoOpen)
-    }else{
-      setStyleAll(defaultStyle) 
-      setContentInfo(<></>)
-    }
-  },[SwitchStateBox])
-
-  
-  function OpenGallery(){
-    if(!SwitchStateBox) setSwitchStateBox(true)
+    } 
     
   }
   function CloseGallery(){
+    setGalleryImageItemImgStyle({
+      backgroundImage:`url(${props.src})`,
+    })
     setSwitchStateBox(false)
+    setSwitchStateImg(false)
+    setStyleAll(defaultStyle) 
+    setContentInfo(<></>)
+  }
+
+  function openImg(){
+    if(!SwitchStateImg){
+      setStyleAll(OpenImg) 
+      setContentInfo(<></>)
+      setSwitchStateImg(true)
+      setGalleryImageItemImgStyle({
+        backgroundImage:`url(${props.src})`,
+        width:"100%",
+        height:"100%",
+        backgroundColor:"#000",
+        backgroundSize:"contain"
+      })
+    }else{
+      setStyleAll(OpenStyle)
+      setContentInfo(contentInfoOpen)
+      setSwitchStateImg(false)
+      setGalleryImageItemImgStyle({
+        backgroundImage:`url(${props.src})`,
+      })
+    }
+
   }
 
 
@@ -103,22 +129,28 @@ export default function GalleryImageItem(props) {
       <div className="GalleryImageItemArea" style={StyleAll.area}>
         <span
           className="GalleryImageItemImg"
-          style={{backgroundImage:`url(${props.src})`}}
-        ></span>
+          style={GalleryImageItemImgStyle}
+        > 
+          <div className="GalleryImageIteControlArea" style={StyleAll.ControlArea} >
+            <span className="GalleryImageIteControlFullScreenArea" onClick={openImg} >
+              <FullScreenIcon color="#fff" sizeLine="0.45vmin" />
+              
+            </span>
+            <span className="GalleryImageItemContentTitleClose" style={StyleAll.CloseIconArea}  onClick={CloseGallery}>
+              <CloseIcon size={CloseIcon.size} color={StyleAll.CLoseIcon.color} shadowSize={StyleAll.CLoseIcon.shadowSize} shadowColor={StyleAll.CLoseIcon.shadowColor} />
+            </span>
+            
+          </div>
+        </span>
+       
       </div>
       <div className="GalleryImageItemContent" style={StyleAll.content}>
         <div className="GalleryImageItemContentTitle"style={StyleAll.title}>
           <span className="GalleryImageItemContentTitleName"><span style={StyleAll.titleIcon} className="GalleryImageItemContentTitleIcon">➤</span> 
             {props.name}
           </span>
-          <span className="GalleryImageItemContentTitleButtomArea">
-            <span className="GalleryImageItemContentTitleCloseWhite"  onClick={CloseGallery}>
-              <CloseIcon color={StyleAll.CLoseIcon.color} shadowSize={StyleAll.CLoseIcon.shadowSize} shadowColor={StyleAll.CLoseIcon.shadowColor} />
-            </span>
-        
-          </span>
         </div>
-        <div className="GalleryImageItemContentInfoArea">
+        <div className="GalleryImageItemContentInfoArea" style={StyleAll.infoArea}>
           {ContentInfo} 
         </div>
       </div>
