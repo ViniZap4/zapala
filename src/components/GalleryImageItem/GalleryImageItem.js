@@ -18,6 +18,7 @@ export default function GalleryImageItem(props) {
   const [SwitchStateImg,setSwitchStateImg ] = useState(false)
   const [OpenStyle, setOpenStyle ] = useState(OpenDesktop)
   const [StyleAll, setStyleAll] = useState(defaultStyle)
+  const [ContentFullICon,setContentFullIcon ] = useState(<></>)
   const [ContentInfo,setContentInfo ] = useState(<></>)
   const [GalleryImageItemImgStyle,setGalleryImageItemImgStyle ] = useState({
     backgroundImage:`url(${props.src})`
@@ -58,15 +59,16 @@ export default function GalleryImageItem(props) {
       </div>
     </a>
   </>)
+  const contentControlOpen = (<FullScreenIcon color="#fff" sizeLine="0.45vmin" />)
 
 
-  // useEffect(()=>{
-  //   if(window.innerWidth >= window.innerHeight){
-  //     setOpenStyle(OpenDesktop)
-  //   }else{
-  //     setOpenStyle(OpenMobile)
-  //   }
-  // },[])
+  useEffect(()=>{
+    if(window.innerWidth >= window.innerHeight){
+      setOpenStyle(OpenDesktop)
+    }else{
+      setOpenStyle(OpenMobile)
+    }
+  },[])
  
    
   function OpenGallery(){
@@ -74,6 +76,7 @@ export default function GalleryImageItem(props) {
       setSwitchStateBox(true)
       setStyleAll(OpenStyle)
       setContentInfo(contentInfoOpen)
+      setContentFullIcon(contentControlOpen  )
     } 
     
   }
@@ -85,6 +88,7 @@ export default function GalleryImageItem(props) {
     setSwitchStateImg(false)
     setStyleAll(defaultStyle) 
     setContentInfo(<></>)
+    setContentFullIcon(<></>)
   }
 
   function openImg(){
@@ -97,7 +101,8 @@ export default function GalleryImageItem(props) {
         width:"100%",
         height:"100%",
         backgroundColor:"#000",
-        backgroundSize:"contain"
+        backgroundSize:"contain",
+        borderRadius:"0vmin"
       })
     }else{
       setStyleAll(OpenStyle)
@@ -132,14 +137,12 @@ export default function GalleryImageItem(props) {
           style={GalleryImageItemImgStyle}
         > 
           <div className="GalleryImageIteControlArea" style={StyleAll.ControlArea} >
-            <span className="GalleryImageIteControlFullScreenArea" onClick={openImg} >
-              <FullScreenIcon color="#fff" sizeLine="0.45vmin" />
-              
+            <span className="GalleryImageIteControlFullScreenArea" onClick={openImg} > 
+              {ContentFullICon}
             </span>
             <span className="GalleryImageItemContentTitleClose" style={StyleAll.CloseIconArea}  onClick={CloseGallery}>
               <CloseIcon size={CloseIcon.size} color={StyleAll.CLoseIcon.color} shadowSize={StyleAll.CLoseIcon.shadowSize} shadowColor={StyleAll.CLoseIcon.shadowColor} />
-            </span>
-            
+            </span>         
           </div>
         </span>
        

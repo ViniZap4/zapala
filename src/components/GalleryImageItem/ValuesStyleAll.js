@@ -1,5 +1,5 @@
 export const defaultStyle = {
-  master:{animation:"init 0.45s linear"},
+  master:{animation:"initWait 0.45s linear"},
   area:{},
   content:{},
   title:{},
@@ -51,9 +51,9 @@ export const OpenMobile = {
   title:{borderRadius:'0vmin', marginBottom:"3.6vh",height:"3.6vh" },
   titleIcon:{fontSize:"0vmin", width:0},
   infoArea:{marginBottom:"3.6vmin"},
-  CloseIconArea:{},
-  ControlArea:{animation:"init 1.08s linear"},
-  CLoseIcon:{size:`4.6vmin`, color:"#000", shadowSize:"0vmin 0vmin 0.36vmin 0.09vmin ", shadowColor:"#fff"}
+  CloseIconArea:{position:'initial', },
+  ControlArea:{animation:"init 1.08s linear",margin: "2.7vmin 2.7vmin", transform:"scale(1.17)"},
+  CLoseIcon:{size:"1.8vmin", color:"#fff", shadowSize:"", shadowColor:""}
 }
 
 export const OpenImg = {

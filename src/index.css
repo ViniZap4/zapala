@@ -51,13 +51,24 @@ li{
 }
 
 /* ---------animations ------------ */
-@keyframes init{
-  from{
-    transform: scale(0);
+@keyframes initWait{
+  0%{
+
     opacity: 0;
     
+  }81%{
+    opacity: 0;
+
+  }100%{
+    opacity: 1;
+  }
+}
+
+@keyframes init{
+  from{
+    
+    opacity: 0;    
   }to{
-    transform: scale(1);
     opacity: 1;
   }
 }
