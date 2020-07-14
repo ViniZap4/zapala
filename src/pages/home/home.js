@@ -13,10 +13,10 @@ export default function Home(){
     <CreatePage id="Home">
       <div className="HomeContent">
         <span
-          className="Inlustation"
+          className="Illustration"
           style={{backgroundImage:`url(${img})`}}
-          title="Zapalá"
-        >Zapalá</span>
+          title="σοφία"
+        >σοφία - Zapalá</span>
       </div>
     </CreatePage>
   </>)

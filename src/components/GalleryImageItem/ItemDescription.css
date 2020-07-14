@@ -9,7 +9,7 @@
   margin-right: 0.54vw;
   cursor: text;
   font-family: 'belgrano';
-  animation: initBoxgalleyFont 0.9s linear;
+  animation: initBoxGalleryFont 0.9s linear;
 }
 
 .ItemDescriptionValue{
@@ -18,5 +18,5 @@
   color: #535353;
   cursor: text;
   font-family: 'belgrano';
-  animation: initBoxgalleyFont 0.9s linear;
+  animation: initBoxGalleryFont 0.9s linear;
 }

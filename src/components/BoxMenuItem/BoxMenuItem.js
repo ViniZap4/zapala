@@ -35,7 +35,10 @@ export default function BoxMenuItem(props) {
      <ItemBoxMenuItem href="/gallery">
         Galeria
      </ItemBoxMenuItem>
-     <ItemBoxMenuItem href="#">
+     <ItemBoxMenuItem href="/Projects">
+        Projetos
+     </ItemBoxMenuItem >
+     {/* <ItemBoxMenuItem href="#">
         Artigos
      </ItemBoxMenuItem >
      <ItemBoxMenuItem href="#">
@@ -49,7 +52,7 @@ export default function BoxMenuItem(props) {
      </ItemBoxMenuItem >
      <ItemBoxMenuItem href="#">
         Animações
-     </ItemBoxMenuItem >
+     </ItemBoxMenuItem > */}
   
 
     </div>

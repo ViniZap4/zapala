@@ -46,7 +46,7 @@ export default function GalleryImageItem(props) {
     {/* <ItemDescription info="temanho">
       {props.size}
     </ItemDescription> */}
-    <ItemDescription info="Author">
+    <ItemDescription info="Autor">
       {props.author}
     </ItemDescription>
     {/* <ItemDescription info={props.licence}>
@@ -59,7 +59,7 @@ export default function GalleryImageItem(props) {
       </div>
     </a>
   </>)
-  const contentControlOpen = (<FullScreenIcon color="#fff" sizeLine="0.45vmin" />)
+  const contentControlOpen = (<FullScreenIcon color="#fff" sizeLine="0.36vmin" />)
 
 
   useEffect(()=>{

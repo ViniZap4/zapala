@@ -30,15 +30,14 @@ export default function Gallery(props) {
           
           
           <GalleryImageItem
-            name="Zapalá"
+            name="σοφία"
             src={ZapalaLogoImg}
             creation="Junho de 2020"
             upload="1 de julho de 2020"
             resolution="1280 x 1280"
             author="Vinicius Zapalá dos Santos"
             srcAuthor="https://vinicius-zapala.herokuapp.com/"
-          >
-            Arte abstrada, ilustrativa, Usada como logo de Zapalá, representando a dúvuda e a sabedoria, inspirada no Triskle e Olho de Hórus, mas tendo elegância, complexidade, e ao mesmo tempo sendo simples e moderna.
+          >{ler}
           </GalleryImageItem>
           <GalleryImageItem 
             name="リーダーシップ"

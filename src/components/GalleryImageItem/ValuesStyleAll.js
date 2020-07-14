@@ -75,5 +75,5 @@ export const OpenImg = {
   infoArea:{marginBottom:"0vmin"},
   CloseIconArea:{position:'initial', },
   ControlArea:{}, 
-  CLoseIcon:{size:"1.8vmin", color:"#fff", shadowSize:"", shadowColor:""}
+  CLoseIcon:{size:"0.9vh", color:"#fff", shadowSize:"", shadowColor:""}
 }

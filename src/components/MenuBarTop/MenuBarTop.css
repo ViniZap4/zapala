@@ -9,9 +9,10 @@
   width: 100%;
   background-color: #fff;
   height: 7.2vmin;
-  box-shadow: 0.63vmin 0.63vmin 2.1vmin rgba(15, 15, 15, 0.685) ;
+  box-shadow: 0vmin 0.0vmin 3.6vmin #0f0f0fb4 ;
   z-index: 4;
 }
+
 
 .MenuBarTopLogo{
   margin-left: 0.9vw;

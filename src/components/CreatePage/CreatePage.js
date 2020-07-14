@@ -2,7 +2,7 @@ import React from 'react';
 
 //import components
 import MenuBarTop from '../MenuBarTop/MenuBarTop'
-import TitleComponents from '../TitleComponts/TitleComponents'
+import TitleComponents from '../TitleComponents/TitleComponents'
 
 //import contexts
 import MenuContextProvider from '../../Context/menuContext'
@@ -12,7 +12,7 @@ import { UseTitleComponentsContext } from '../../Context/TitleComponentsContext'
 
 export default function CreatePage(props) {
 
-  return (
+  return(
     <TitleComponentsProvider >
       <DateProvider>
         <MenuContextProvider>
