@@ -81,22 +81,7 @@ li{
 }
 
 /* ---------animations ------------ */
-@keyframes initWait{
-  0%{
-    margin:0vw;
-    transform: scale(0);
-    opacity: 0;
-    
-  }72%{
-    margin:0vw;
-    transform: scale(0);
-    opacity: 0;
 
-  }100%{
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 @keyframes init{
   from{

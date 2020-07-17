@@ -1,5 +1,5 @@
 export const defaultStyle = {
-  master:{animation:"initWait 0.45s linear"},
+  master:{animation:"initWaitGallery 0.45s linear"},
   area:{},
   content:{},
   title:{},
@@ -14,10 +14,10 @@ export const OpenDesktop = {
   master:{
     flexDirection:"row", 
     position:'fixed',  
-    top:"9vh",
+    top:"9.9vh",
     left:"4.5vw",
     width:'90vw',
-    height:'83.7vh',
+    height:'86.4vh',
     zIndex:3,
     cursor: 'default',
     boxShadow:" 0.36vmin 0.36vmin 3.6vmin #6d6d6dea",
@@ -52,7 +52,7 @@ export const OpenMobile = {
   titleIcon:{fontSize:"0vmin", width:0},
   infoArea:{marginBottom:"4.5vmin"},
   CloseIconArea:{position:'initial', },
-  ControlArea:{animation:"init 1.08s linear",margin: "2.7vmin 3.6vmin", transform:"scale(1.44)"},
+  ControlArea:{animation:"init 1.08s linear",margin: "2.7vmin 3.6vmin", transform:"scale(1.26)"},
   CLoseIcon:{size:"1.8vmin", color:"#fff", shadowSize:"", shadowColor:""}
 }
 

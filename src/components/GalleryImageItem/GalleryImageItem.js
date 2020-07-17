@@ -20,9 +20,11 @@ export default function GalleryImageItem(props) {
   const [StyleAll, setStyleAll] = useState(defaultStyle)
   const [ContentFullICon,setContentFullIcon ] = useState(<></>)
   const [ContentInfo,setContentInfo ] = useState(<></>)
-  const [GalleryImageItemImgStyle,setGalleryImageItemImgStyle ] = useState({
-    backgroundImage:`url(${props.src})`
-  })
+  const valueItemImgStyleDefault = {
+    backgroundImage:`url(${props.src})`,
+    border:'0.18vmin solid #0090a7'
+  }
+  const [GalleryImageItemImgStyle,setGalleryImageItemImgStyle ] = useState(valueItemImgStyleDefault)
   
 
   const contentInfoOpen = (<>
@@ -77,6 +79,10 @@ export default function GalleryImageItem(props) {
       setStyleAll(OpenStyle)
       setContentInfo(contentInfoOpen)
       setContentFullIcon(contentControlOpen  )
+      setGalleryImageItemImgStyle({
+        backgroundImage:`url(${props.src})`,
+        border:"none",
+      })
     } 
     
   }
@@ -89,6 +95,7 @@ export default function GalleryImageItem(props) {
     setStyleAll(defaultStyle) 
     setContentInfo(<></>)
     setContentFullIcon(<></>)
+    setGalleryImageItemImgStyle(valueItemImgStyleDefault)
   }
 
   function openImg(){
@@ -104,12 +111,15 @@ export default function GalleryImageItem(props) {
         backgroundSize:"contain",
         borderRadius:"0vmin"
       })
+      
     }else{
       setStyleAll(OpenStyle)
       setContentInfo(contentInfoOpen)
       setSwitchStateImg(false)
+      setGalleryImageItemImgStyle(valueItemImgStyleDefault)
       setGalleryImageItemImgStyle({
         backgroundImage:`url(${props.src})`,
+        border:"none",
       })
     }
 

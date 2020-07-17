@@ -6,7 +6,7 @@
   min-width: 21vmax;
   min-height: 18vmax;
   flex: 1 1;
-  margin: 0.63vh 0.63vh;
+  margin: 0.9vh 0.9vh;
   border-radius: 9vmin;
 
   background-color: #fff;
@@ -223,3 +223,19 @@
     height:4.5vmin; 
   }
 } 
+@keyframes initWaitGallery{
+  0%{
+    margin:-5.4vw;
+    transform: scale(0);
+    opacity: 0;
+    
+  }72%{
+    margin:0vw;
+    transform: scale(0);
+    opacity: 0;
+
+  }100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
