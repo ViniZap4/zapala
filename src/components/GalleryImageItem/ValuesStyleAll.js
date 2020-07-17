@@ -17,7 +17,7 @@ export const OpenDesktop = {
     top:"9vh",
     left:"4.5vw",
     width:'90vw',
-    height:'81vh',
+    height:'83.7vh',
     zIndex:3,
     cursor: 'default',
     boxShadow:" 0.36vmin 0.36vmin 3.6vmin #6d6d6dea",
@@ -40,19 +40,19 @@ export const OpenMobile = {
   master:{
     flexDirection:"column", 
     position:'fixed',  
-    top:"9vh",
+    top:"7.2vh",
     left:"4.5vw",
     width:'90vw',
-    height:'81vh',
+    height:'90vh',
     borderRadius:"0.63vmin"
   },
   area:{width: '100%', height:" 100%",},
   content:{ width:"100%" },
   title:{borderRadius:'0vmin', marginBottom:"3.6vh",height:"3.6vh" },
   titleIcon:{fontSize:"0vmin", width:0},
-  infoArea:{marginBottom:"3.6vmin"},
+  infoArea:{marginBottom:"4.5vmin"},
   CloseIconArea:{position:'initial', },
-  ControlArea:{animation:"init 1.08s linear",margin: "2.7vmin 2.7vmin", transform:"scale(1.17)"},
+  ControlArea:{animation:"init 1.08s linear",margin: "2.7vmin 3.6vmin", transform:"scale(1.44)"},
   CLoseIcon:{size:"1.8vmin", color:"#fff", shadowSize:"", shadowColor:""}
 }
 
@@ -74,6 +74,6 @@ export const OpenImg = {
   titleIcon:{fontSize:"0vmin", width:0},
   infoArea:{marginBottom:"0vmin"},
   CloseIconArea:{position:'initial', },
-  ControlArea:{marginRight:"2.7vw"}, 
+  ControlArea: window.innerWidth >= window.innerHeight ? {marginRight:"2.7vw"} : {margin:"3.6vw", transform:"scale(1.44)" } , 
   CLoseIcon:{size:"0.9vh", color:"#fff", shadowSize:"", shadowColor:""}
 }

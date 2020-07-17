@@ -13,6 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   background-color: #ffffff;
+  
 }
 
 code {
@@ -43,11 +44,40 @@ li{
   list-style: none;
 }
 
-/* --------------- zpala style --------- */
+/* --------------- zapala style --------- */
 
 ::selection{
   color: #fff;
   background-color: #0090a7;
+}
+::-webkit-scrollbar{
+  background-color: transparent;
+  max-width: 0.54vw;
+  max-height: 0.6vh;
+  cursor: pointer;
+
+}
+::-webkit-scrollbar-button{
+  max-height: 0%;
+}
+::-webkit-scrollbar-track{
+  background-color: #e6dde9;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track-piece  {
+  background-color: #ffffff00;
+  cursor: pointer;
+
+}
+::-webkit-scrollbar-thumb        {
+  background-color: #0091a7;
+  box-shadow: 0vw 0vw 0.63vw 0.9vw #0090a7;
+}
+::-webkit-scrollbar-corner       {
+  background-color: #461aaa;
+}
+::-webkit-resizer                {
+  background-color: #ffffff;
 }
 
 /* ---------animations ------------ */
