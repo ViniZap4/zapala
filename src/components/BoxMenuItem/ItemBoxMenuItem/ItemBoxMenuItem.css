@@ -20,7 +20,7 @@
 .ItemBoxMenuItem:hover{
   transform: scale(1.08);
   color: #fff;
-  background-color: #008888;
+  background-color: #0090a7;
   border-radius: 0.36vmin;
   
   box-shadow: 0.36vmin 0.36vmin 1.8vmin #000000a4;

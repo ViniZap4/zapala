@@ -22,8 +22,8 @@
   margin-top: 0.27vmin;
   width:0%;
   height: 0.45vh;
-  background-color: #008888;
-  box-shadow: 0vmin 0vmin 1.8vmin #008888;
+  background-color: #0090a7;
+  box-shadow: 0vmin 0vmin 1.8vmin #0090a7;
   border-radius: 90vmin;
 }
 .MenuIcon:hover .UnderLineMenu{
@@ -75,21 +75,21 @@
 @keyframes IconMenuHover0{
   0%{ width: 100%; 
   }25%{width: 20%;   border-radius: 3.6vmin; 
-    background-color: #008888;
+    background-color: #0090a7;
  
   }100%{ width: 100%; }
 }
 @keyframes IconMenuHover1{
   0%{width: 100%;
   }50%{width: 20%; border-radius: 3.6vmin;  
-     background-color: #008888;
+     background-color: #0090a7;
    
   }100%{width: 100%;}
 }
 @keyframes IconMenuHover2{
   0%{width: 100%;
   }75%{width: 20%;  border-radius: 3.6vmin; 
-    background-color: #008888;
+    background-color: #0090a7;
 
   }100%{width: 100%;}
 }
@@ -101,7 +101,7 @@
 }
 .MenuIcon:hover  #ElementIconMenustyleClick{
   /* box-shadow: 0vmin 0vmin 0.9vmin #008888; */
-  background-color: #008888;
+  background-color: #0090a7;
 }
 
 @media only screen and (max-width:600px){

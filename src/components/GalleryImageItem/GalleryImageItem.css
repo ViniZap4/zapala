@@ -3,19 +3,19 @@
   flex-direction:column;
   flex-wrap: nowrap;
   
-  min-width: 15vmax;
+  min-width: 21vmax;
   min-height: 18vmax;
   flex: 1 1;
-  margin: 1.8vh 1.26vw;
+  margin: 0.63vh 0.63vh;
   border-radius: 9vmin;
 
   background-color: #fff;
-  box-shadow: 0vmin 0vmin 6vmin 1.8vmin #c9c9c9;
+  box-shadow: 0 0 1.8vmin 0.63vmin #c9c9c9b0;
   cursor: pointer;
  
 }
 .GalleryImageItem:hover{
-  box-shadow: 0vmin 0vmin 2.7vmin 0.18vmin #053333f1;
+  box-shadow: 0vmin 0vmin 2.7vmin 0vmin #00414b;
   border-radius: 0.63vmin;
 }
 
@@ -52,7 +52,7 @@
   align-items: center;
   margin: 1.8vmin 1.8vmin;
   border-radius: 0.63vmin;
-  background-color: #008888;
+  background-color: #0090a7;
   box-shadow:0.9vmin 0.18vmin 1.8vmin #353535b4;
   
 }
@@ -93,7 +93,7 @@
   justify-content: flex-start;
   width: 100%;
   color: #fff;
-  background-color: #008888;
+  background-color: #0090a7;
   font-size: 2.7vmin;
   border-radius: 0vmin 0vmin 0.63vmin 0.63vmin;
 }
@@ -138,7 +138,7 @@
 
 }
 .GalleryImageItemContentInfoDescription{
-  color: #008888;
+  color: #0090a7;
   margin:1.8vh 0vw;
   font-size:3.6vmin;
   font-family: 'belgrano';
@@ -183,8 +183,8 @@
 .GalleryImageItemContentInfoNameUnderline{
   width: 0%;
   height: 0.45vh;
-  background-color: #008888;
-  box-shadow: 0vmin 0vmin 1.8vmin #008888;
+  background-color: #0090a7;
+  box-shadow: 0vmin 0vmin 1.8vmin #0090a7;
   border-radius: 90vmin;
   
 }

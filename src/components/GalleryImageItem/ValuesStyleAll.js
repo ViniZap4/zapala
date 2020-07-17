@@ -70,10 +70,10 @@ export const OpenImg = {
   },
   area:{width: '100%', height:" 100%",},
   content:{ width:"100%", height:"0vmin", transform:"scale(0)" },
-  title:{borderRadius:'0vmin', marginBottom:"3.6vh",height:"0vh", transform:"sacale(0)" },
+  title:{borderRadius:'0vmin', marginBottom:"3.6vh",height:"0vh", transform:"scale(0)" },
   titleIcon:{fontSize:"0vmin", width:0},
   infoArea:{marginBottom:"0vmin"},
   CloseIconArea:{position:'initial', },
-  ControlArea:{}, 
+  ControlArea:{marginRight:"2.7vw"}, 
   CLoseIcon:{size:"0.9vh", color:"#fff", shadowSize:"", shadowColor:""}
 }
