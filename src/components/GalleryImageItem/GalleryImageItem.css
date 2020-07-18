@@ -6,8 +6,8 @@
   min-width: 21vmax;
   min-height: 18vmax;
   flex: 1 1;
-  margin: 0.9vh 0.9vh;
-  border-radius: 9vmin;
+  margin: 0.36vw;
+  border-radius: 9vmin; 
 
   background-color: #fff;
   box-shadow: 0 0 1.8vmin 0.63vmin #e2e2e2b0;
@@ -215,14 +215,6 @@
 
 }
 
-/* ---------- media --------------- */
-
-@media only screen and (max-width:700px){
-  .GalleryImageItemContentTitleClose{
-    width: 4.5vmin;
-    height:4.5vmin; 
-  }
-} 
 @keyframes initWaitGallery{
   0%{
     margin:-5.4vw;
@@ -239,3 +231,12 @@
     opacity: 1;
   }
 }
+
+/* ---------- media --------------- */
+
+@media only screen and (max-width:700px){
+  .GalleryImageItemContentTitleClose{
+    width: 4.5vmin;
+    height:4.5vmin; 
+  }
+} 
