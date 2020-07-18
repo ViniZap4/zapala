@@ -138,6 +138,9 @@ export default function Gallery(props) {
           >
             {ler}
           </GalleryImageItem>
+
+
+          
  
 
         </div>

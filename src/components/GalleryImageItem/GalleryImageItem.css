@@ -218,16 +218,18 @@
 @keyframes initWaitGallery{
   0%{
     margin:-5.4vw;
-    transform: scale(0);
-    opacity: 0;
+    /* transform: scale(0); */
+    /* opacity: 0; */
+    background-color: transparent;
+    box-shadow: none;
     
   }72%{
     margin:0vw;
-    transform: scale(0);
-    opacity: 0;
-
+    /* transform: scale(1); */
+    /* opacity: 9; */
+    background-color: transparent;
+    box-shadow: none;
   }100%{
-    transform: scale(1);
     opacity: 1;
   }
 }

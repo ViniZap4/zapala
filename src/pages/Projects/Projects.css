@@ -1,7 +1,24 @@
 #Projects{
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  
+
+
 }
 .contentProjects{
   display: flex;
-  
+  flex-direction: column;
+  width: 91.8%;
+  height: 90%;
+  margin-top: 4.5vh;
+
+}
+
+.ProjectsContentTitlePage{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 4.5vmin;
 }

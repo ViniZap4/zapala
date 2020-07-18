@@ -1,5 +1,5 @@
 export const defaultStyle = {
-  master:{animation:"initWaitGallery 0.45s linear"},
+  master:{animation:"initWaitGallery 0.54s linear"},
   area:{},
   content:{},
   title:{},
@@ -29,7 +29,7 @@ export const OpenDesktop = {
   title:{borderRadius:'0vmin 0.63vmin 0vmin 0.9vmin', marginBottom:"0.9vh",height:"6.3vh", boxShadow:"-0.36vmin 0.18vmin 1.8vmin #000000c7" },
   titleIcon:{fontSize:"0vmin", width:0},
   infoArea:{},
-  CloseIconArea:{animation:"init 1.08s linear"},
+  CloseIconArea:{animation:"initWaitOpacity 1.08s linear"},
   CLoseIcon:{size:`3.6vmin`, color:"#fff", shadowSize:"", shadowColor:""}
 
 

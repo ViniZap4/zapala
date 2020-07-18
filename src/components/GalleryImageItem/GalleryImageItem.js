@@ -78,7 +78,7 @@ export default function GalleryImageItem(props) {
       setSwitchStateBox(true)
       setStyleAll(OpenStyle)
       setContentInfo(contentInfoOpen)
-      setContentFullIcon(contentControlOpen  )
+      setContentFullIcon(contentControlOpen)
       setGalleryImageItemImgStyle({
         backgroundImage:`url(${props.src})`,
         border:"none",
@@ -124,7 +124,7 @@ export default function GalleryImageItem(props) {
     }
 
   }
-
+  
 
   function ItemDescription(props) {
     return (    

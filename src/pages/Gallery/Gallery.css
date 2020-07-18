@@ -3,7 +3,6 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  /* background-color: rgb(166, 139, 192); */
 
 }
 .GalleryContentPage{
@@ -29,4 +28,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 3.6vh;
+  animation:initWaitOpacity 1.17s linear ;
+
 }

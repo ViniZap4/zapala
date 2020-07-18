@@ -83,12 +83,36 @@ li{
 /* ---------animations ------------ */
 
 
-@keyframes init{
+@keyframes initScale{
   from{
     transform: scale(0);
-    opacity: 0;    
+
   }to{
     transform: scale(1);
+    
+  }
+}
+
+
+@keyframes initOpacity{
+  from{
+    
+    opacity: 0;    
+  }to{
+    
+    opacity: 1;
+  }
+}
+
+@keyframes initWaitOpacity{
+  0%{
+    
+    opacity: 0;    
+  }50%{
+    opacity: 0;    
+
+  }100%{
+    
     opacity: 1;
   }
 }
