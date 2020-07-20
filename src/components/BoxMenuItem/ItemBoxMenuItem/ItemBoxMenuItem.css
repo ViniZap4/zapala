@@ -8,11 +8,12 @@
   padding: 0.9vh 0vw ;
   padding-right: 1.62vw;
   padding-left: 0.36vw;
-
+  background-position: center;
+  background-repeat: no-repeat;
   
   font-size: 2.7vmin;
 
-  border-radius: 6.3vmin;
+  border-radius: 9vmin;
 
   cursor: pointer;
 
@@ -20,11 +21,19 @@
 .ItemBoxMenuItem:hover{
   transform: scale(1.08);
   color: #fff;
+
   background-color: #0090a7;
   border-radius: 0.36vmin;
   
+  
   box-shadow: 0.36vmin 0.36vmin 1.8vmin #000000a4;
+  background-image: radial-gradient(circle, #0090a7 31%,#0090a7 32%, #ffffff 60%);
+
+  background-size: 1000% 1000%;
+
+  animation: centerBackgroundColorRadialWhite 1.08s linear ;
 }
+
 
 
 

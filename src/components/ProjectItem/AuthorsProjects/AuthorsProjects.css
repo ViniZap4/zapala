@@ -1,0 +1,42 @@
+.AuthorsProjects{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.AuthorsProjectsName{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.9vmin;
+
+}
+
+.AuthorsProjectsContent{
+  display: flex;
+  
+  flex-direction: column;
+  /* margin-left: 0.9vmin; */
+  
+}
+.AuthorsProjectsText{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0.36vw;
+  font-size: 2.7vmin;
+  font-weight: 200;
+}
+.AuthorsProjectsContentText{
+  margin: 1.17vmin 0vmin;
+  color: #0090a7;
+  
+}
+.AuthorsProjectsContentTextContent{
+  color: #575757;
+
+}
+.AuthorsProjectsContentText,
+.AuthorsProjectsContentTextContent,
+.AuthorsProjectsContentTextLink{
+  font-size: 2.34vmin;
+}

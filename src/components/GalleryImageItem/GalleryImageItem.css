@@ -200,13 +200,13 @@
 @keyframes initBoxGalleryFont{
   0%{
     opacity: 0;
-    font-size: 0vw;
-    transform: scale(0);
+    /* font-size: 0vw; */
+    /* transform: scale(0); */
   }
   50%{
     opacity: 0;
-    font-size: 0vw;
-    transform: scale(0);
+    /* font-size: 0vw; */
+    /* transform: scale(0); */
   }100%{
     opacity: 1;
     font-size: 2.7vmin;

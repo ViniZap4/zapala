@@ -1,0 +1,62 @@
+/* ---------- OpenedTitle --------- */
+
+.OpenedTitle{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #0090a7;
+  margin-bottom: 2.7vh;
+}
+.OpenedTitleText{
+  display: flex;
+  flex-direction: row;
+  margin: 0.9vh 1.8vw;
+  color: #fff;
+}
+
+
+
+/* ---------- OpenedContentProjectItem --------- */
+
+.OpenedContentProjectItem{
+  display: flex;
+  flex-direction: column;
+
+}
+.OpenedContentProjectItemAccess{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3.6vh ;
+
+}
+
+.OpenedContentProjectItemAuthorsArea{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3.6vh 2.7vw;
+}
+
+/* ---------- OpenedDescription --------- */
+
+.OpenedDescription{
+  display: flex;
+  flex-direction: column;
+  flex: 0.9 1;
+  min-width: 30vmax;
+  margin-left: 3.6vmax;
+  font-family: 'Belgrano';
+  animation: initWaitOpacity 0.9s linear;
+}
+.OpenedDescriptionTitle{
+  margin-top: 1.8vh;
+  font-size: 3.6vmin;
+  color: #0090a7;
+}
+.OpenedDescriptionText{
+  margin-top: 1.8vh;
+  color: #000000;
+  text-align: justify;
+}

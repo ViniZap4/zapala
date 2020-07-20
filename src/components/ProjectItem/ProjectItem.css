@@ -1,0 +1,179 @@
+.ProjectItem{
+  display: flex;
+  flex-direction: column;
+  margin: 0.9vh 0.63vw;
+  min-width: 21vmax;
+
+  
+  height: 36vmin;
+  min-height: max-content;
+  flex: auto;
+  box-shadow:  0vmin 0vmin 1.8vmin #afafaf;
+  background-color: #fff;
+  animation: initProject 0.36s linear;
+  padding-bottom: 3.6vmin;
+  border-radius: 0.9vmin;
+}
+
+/*   -------- content img   */
+
+.ProjectItemContentInfo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 0.9vmin 0.9vmin 0vmin 0vmin;
+  overflow: hidden;
+
+}
+.ProjectItemImgContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:21vmin;
+}
+.ProjectItemImg{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* --------- defaultProjectItemContent ------ */
+.defaultProjectItemContent{
+  display: flex;
+  flex-direction: column;
+  
+  height: 15vmin;
+}
+.defaultProjectItemContentTitle{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #0090a7;
+  margin-bottom: 2.16vmin;
+
+}
+.defaultProjectItemContentTitleText{
+  display: flex;
+  margin: 0.54vh 0.9vw;
+  color: #fff;
+
+}
+
+.defaultProjectItemContentAccess,
+.defaultProjectItemContentMore{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  flex:1 1;
+  margin-bottom: 1.8vmin;
+}
+
+/* .defaultProjectItemContentMore{
+  
+} */
+.defaultProjectItemContentRepository{
+  display: flex;
+  flex-direction: row;
+  flex: 1 1;
+
+}
+
+
+
+/* ProjectItemOpenButton */
+.ProjectItemOpenButtonArea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: flex-end;
+}
+.ProjectItemOpenButton{
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-items: center;
+  /* margin: 1.8vh 0.54vw; */
+  border: 0.63vmin;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 9vmin;
+  border: 0.27vmin solid #0090a7 ;
+
+}
+.ProjectItemOpenButton:hover {
+  transform: scale(1.08);
+  background-color: #0090a7;
+  border-radius: 0.36vmin; 
+  box-shadow: 0.36vmin 0.36vmin 1.8vmin #00000081;
+  background-image: radial-gradient(circle, #0090a7 31%,#0090a7 32%, #ffffff 60%);
+
+  background-size: 1000% 1000%;
+
+  animation: centerBackgroundColorRadial 0.9s linear ;
+}
+
+
+
+
+
+
+.ProjectItemOpenButtonText{
+  display: flex;
+  color: #0090a7;
+  font-weight: 900;
+  white-space: nowrap;
+  font-size: 2.16vmin;
+  margin: 0.9vmin;
+
+}
+.ProjectItemOpenButton:hover .ProjectItemOpenButtonText{
+  color: #ffffff;
+  font-weight: 100;
+
+}
+
+.ProjectItemOpenButtonCloseArea{
+  display: flex;
+  position: absolute;
+  right: 1.17%;
+  top:0.63%;
+  margin-right: 0.63vmin;
+  width: 4.05vmin;
+  height:4.05vmin;
+  animation:initWaitOpacity 1.08s linear;
+}
+
+/* -------------- styles ----------- */
+@keyframes initProject{
+  0%{
+    margin:-2.7vw;
+    transform: scale(0.9);
+  }72%{
+    margin:0vw;
+
+  }100%{
+    opacity: 1;
+  } 
+}
+@keyframes initWaitProject{
+  0%{
+    margin:-4.5vw;
+  }72%{
+    margin:0vw;
+
+  }100%{
+
+    opacity: 1;
+  }
+}

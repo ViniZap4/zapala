@@ -30,7 +30,7 @@ export default function GalleryImageItem(props) {
   const contentInfoOpen = (<>
     <div>
       <h2 className="GalleryImageItemContentInfoDescription" >
-        Descricão: 
+        Descrição: 
       </h2>
       <span className="GalleryImageItemContentInfoDescriptionText">
         {props.children}    
@@ -48,9 +48,9 @@ export default function GalleryImageItem(props) {
     {/* <ItemDescription info="temanho">
       {props.size}
     </ItemDescription> */}
-    <ItemDescription info="Autor">
+    {/* <ItemDescription info="Autor">
       {props.author}
-    </ItemDescription>
+    </ItemDescription> */}
     {/* <ItemDescription info={props.licence}>
       {props.licenceText}
     </ItemDescription> */}

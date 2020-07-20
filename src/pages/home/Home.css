@@ -19,8 +19,11 @@
   background-size: cover;
   font-size: 2.7vmin;
   border-radius: 0.63vmin;
-  box-shadow: 0.36vmin 0.36vmin 1.8vmin #949494;
+  box-shadow:  0vmin 0vmin 9vmin #ccc;
+  animation:initWaitOpacity 0.9s linear ;
+
 }
+
 
 @media only screen  and (max-width:630px){
   .Illustration{

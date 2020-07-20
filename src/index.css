@@ -47,13 +47,14 @@ li{
 /* --------------- zapala style --------- */
 
 ::selection{
+  overflow: hidden;
   color: #fff;
   background-color: #0090a7;
 }
 ::-webkit-scrollbar{
   background-color: transparent;
   max-width: 0.54vw;
-  max-height: 0.6vh;
+  max-height: 0.54vw;
   cursor: pointer;
 
 }
@@ -71,10 +72,11 @@ li{
 }
 ::-webkit-scrollbar-thumb        {
   background-color: #0091a7;
-  box-shadow: 0vw 0vw 0.63vw 0.9vw #0090a7;
+  /* box-shadow: 0vw 0vw 0.63vw 0.9vw #0090a7; */
 }
 ::-webkit-scrollbar-corner       {
-  background-color: #461aaa;
+  background-color: #0090a7;
+  
 }
 ::-webkit-resizer                {
   background-color: #ffffff;
@@ -90,6 +92,16 @@ li{
   }to{
     transform: scale(1);
     
+  }
+}
+
+@keyframes initWaitScale{
+  0%{
+    transform: scale(0);
+  }50%{
+    transform: scale(0);
+  }100%{
+    transform: scale(1);
   }
 }
 
@@ -114,5 +126,25 @@ li{
   }100%{
     
     opacity: 1;
+  }
+}
+
+@keyframes centerBackgroundColorRadial{
+  0%{
+    background-size: 100% 100%;
+  }100%{
+    background-size: 1000% 1000%;
+  }
+}
+@keyframes centerBackgroundColorRadialWhite{
+  0%{
+    background-size: 100% 100%;
+  }36%{
+    color: #fff;
+
+  }100%{
+    background-size: 1000% 1000%;
+    color: #fff;
+
   }
 }
