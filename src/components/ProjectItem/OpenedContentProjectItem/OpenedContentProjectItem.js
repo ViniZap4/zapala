@@ -7,6 +7,7 @@ export function OpenedTitle(props) {
   return (
     <div className="OpenedTitle">
       <span className="OpenedTitleText">{props.children}</span>
+      {props.button}
     </div>
  
   );
@@ -24,6 +25,7 @@ export default function OpenedContentProjectItem(props) {
           <span className="ProjectItemOpenButtonText">Ver Repositório no GitHub</span>
         </div>
       </div>
+      <h2 className="OpenedContentProjectItemTitleAuthors"> Stakeholders do Projetos </h2>
       <div className="OpenedContentProjectItemAuthorsArea">
         {props.authors}
       </div>

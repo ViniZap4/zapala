@@ -2,7 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
+  justify-content: space-around;
+  margin: 4.5vh 3.6vw;
+  padding: 1.8vmin;
+  border-radius: 0.9vmin;
+  box-shadow: 0vmin 0vmin 4.5vmin rgba(204, 204, 204, 0.575) ;
+  width: 63vmin;
 }
 .AuthorsProjectsName{
   display: flex;
@@ -15,6 +20,7 @@
   display: flex;
   
   flex-direction: column;
+  flex: 1 1;
   /* margin-left: 0.9vmin; */
   
 }
@@ -39,4 +45,5 @@
 .AuthorsProjectsContentTextContent,
 .AuthorsProjectsContentTextLink{
   font-size: 2.34vmin;
+  flex: 1 1;
 }

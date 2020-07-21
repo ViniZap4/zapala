@@ -50,20 +50,27 @@ li{
   overflow: hidden;
   color: #fff;
   background-color: #0090a7;
+  
 }
+
+/* scrollbar */
 ::-webkit-scrollbar{
   background-color: transparent;
   max-width: 0.54vw;
   max-height: 0.54vw;
   cursor: pointer;
-
+  border-radius: 0.9vmin;
 }
 ::-webkit-scrollbar-button{
   max-height: 0%;
+  background-color: #0090a7;
+  border-radius: 9vmin;
+
 }
 ::-webkit-scrollbar-track{
   background-color: #e6dde9;
   cursor: pointer;
+
 }
 ::-webkit-scrollbar-track-piece  {
   background-color: #ffffff00;
@@ -72,6 +79,8 @@ li{
 }
 ::-webkit-scrollbar-thumb        {
   background-color: #0091a7;
+  border-radius: 0.9vmin;
+
   /* box-shadow: 0vw 0vw 0.63vw 0.9vw #0090a7; */
 }
 ::-webkit-scrollbar-corner       {

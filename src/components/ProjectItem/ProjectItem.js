@@ -22,9 +22,7 @@ export default function ProjectItem(props) {
   const defaultProjectItemImgStyle = {
     backgroundImage:`url(${props.background})`
   }
-  const openedProjectItemImgStyle = {
-    backgroundImage:`url(${props.background})`
-  } 
+
 
   const AccessLinkItemStyle = { marginLeft:'1.8vw' }
   const defaultProjectItemContent = (<>
@@ -57,7 +55,7 @@ export default function ProjectItem(props) {
   //styles
   const [ProjectItemStyle, setProjectItemStyle] = useState({})
   const [ProjectItemImgContentStyle, setProjectItemImgContentStyle ] = useState({})
-  const [ProjectItemImgStyle, setProjectItemImgStyle] = useState(defaultProjectItemImgStyle)
+  // const [ProjectItemImgStyle, setProjectItemImgStyle] = useState(defaultProjectItemImgStyle)
   //content
   const [TittleContent,setTittleContent ] = useState(<></>)
   const [ProjectItemContent,setProjectItemContent ] = useState(defaultProjectItemContent)
@@ -69,8 +67,8 @@ export default function ProjectItem(props) {
     setProjectItemImgContentStyle(openedProjectItemImgContentStyle)
     //content
     setTittleContent(<>
-      <OpenedTitle> {props.titleProject} </OpenedTitle>
-      {ButtonCloseAreaContent}
+      <OpenedTitle button={ButtonCloseAreaContent}> {props.titleProject} </OpenedTitle>
+     
     </>)
     setProjectItemContent(<OpenedContentProjectItem titleProject={props.titleProject} authors={props.children} />)
     setDescriptionContent(<OpenedDescription text={props.description}/>)
@@ -92,7 +90,7 @@ export default function ProjectItem(props) {
         <div className="ProjectItemImgContent" style={ProjectItemImgContentStyle}>
           <span
             className="ProjectItemImg"
-            style={ProjectItemImgStyle}
+            style={defaultProjectItemImgStyle}
           ></span>
         </div>
         {DescriptionContent}

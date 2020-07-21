@@ -28,6 +28,91 @@ export default function Projects(props) {
               office="gerente do projeto, Desenvolvedor, Designer" 
               textLinks="Ver repósitorios"
             />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office=" Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer, marketing " 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office=" Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
+            <AuthorsProjects 
+              iconSrc={githubIcon}
+              name="Vincius Zapalá" 
+              office="gerente do projeto, Desenvolvedor, Designer" 
+              textLinks="Ver repósitorios"
+            />
           </ProjectItem>
           <ProjectItem titleProject="Magic Language" ></ProjectItem>
           <ProjectItem titleProject="Connect Developers Articles"></ProjectItem>

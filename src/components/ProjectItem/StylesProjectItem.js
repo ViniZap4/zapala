@@ -1,10 +1,11 @@
 
 export const openedProjectItemStyle = {
   position:"fixed",
-  top:"9vh",
+  top:"4.5vmax",
   left:"1.17vw",
   width:"96.3vw",
-  height:"81vh",
+  height:'max-content',
+  maxHeight:"81vh",
   overflowY:'auto',
   zIndex:3,
 }

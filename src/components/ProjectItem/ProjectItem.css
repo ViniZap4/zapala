@@ -3,8 +3,6 @@
   flex-direction: column;
   margin: 0.9vh 0.63vw;
   min-width: 21vmax;
-
-  
   height: 36vmin;
   min-height: max-content;
   flex: auto;
@@ -23,7 +21,6 @@
   flex-wrap: wrap;
   width: 100%;
   border-radius: 0.9vmin 0.9vmin 0vmin 0vmin;
-  overflow: hidden;
 
 }
 .ProjectItemImgContent{
@@ -51,6 +48,7 @@
   flex-direction: column;
   
   height: 15vmin;
+  animation:initProject 0.45s linear;
 }
 .defaultProjectItemContentTitle{
   display: flex;
@@ -145,13 +143,11 @@
 
 .ProjectItemOpenButtonCloseArea{
   display: flex;
-  position: absolute;
-  right: 1.17%;
-  top:0.63%;
-  margin-right: 0.63vmin;
+  margin-right: 0.9vw;
   width: 4.05vmin;
   height:4.05vmin;
   animation:initWaitOpacity 1.08s linear;
+
 }
 
 /* -------------- styles ----------- */

@@ -2,6 +2,8 @@
 
 .OpenedTitle{
   display: flex;
+  position: sticky;
+  top: 0vh;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
@@ -11,6 +13,7 @@
 .OpenedTitleText{
   display: flex;
   flex-direction: row;
+  flex: 1 1 ;
   margin: 0.9vh 1.8vw;
   color: #fff;
 }
@@ -32,11 +35,19 @@
 
 }
 
+.OpenedContentProjectItemTitleAuthors{
+  font-size: 3.6vmin;
+  color: #0090a7;
+  margin-top: 9vmin;
+  margin-left: 15vmin;
+}
+
 .OpenedContentProjectItemAuthorsArea{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 3.6vh 2.7vw;
+  margin: 0vmin 2.7vw;
 }
 
 /* ---------- OpenedDescription --------- */
