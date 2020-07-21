@@ -48,7 +48,6 @@
   flex-direction: column;
   
   height: 15vmin;
-  animation:initProject 0.45s linear;
 }
 .defaultProjectItemContentTitle{
   display: flex;
@@ -56,6 +55,7 @@
   flex-direction: row;
   background-color: #0090a7;
   margin-bottom: 2.16vmin;
+  animation: initWaitOpacity 0.45s linear;
 
 }
 .defaultProjectItemContentTitleText{
@@ -72,6 +72,8 @@
   align-items: center;
   flex:1 1;
   margin-bottom: 1.8vmin;
+  animation: initWaitOpacity 0.9s linear;
+
 }
 
 /* .defaultProjectItemContentMore{

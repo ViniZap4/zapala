@@ -1,7 +1,7 @@
 
 export const openedProjectItemStyle = {
   position:"fixed",
-  top:"6.3vmax",
+  top:"8.37vh",
   left:"2.16vw",
   width:"96.3vw",
   height:'max-content',
