@@ -31,11 +31,11 @@ export default function ProjectItem(props) {
         <span className="defaultProjectItemContentTitleText">{props.titleProject}</span>
       </div>
       <div className="defaultProjectItemContentAccess">
-        <LinkProjectItem iconSrc={props.iconSrc} style={AccessLinkItemStyle} > Visitar {props.titleProject}</LinkProjectItem>
+        <LinkProjectItem href={props.href} iconSrc={props.iconSrc} style={AccessLinkItemStyle} > Visitar {props.titleProject}</LinkProjectItem>
       </div>
       <div className="defaultProjectItemContentMore">
         <div className="defaultProjectItemContentRepository">
-        <LinkProjectItem iconSrc={gitHubIcon} style={AccessLinkItemStyle} >Ver Repositório</LinkProjectItem>
+        <LinkProjectItem href={props.hrefRepository} iconSrc={gitHubIcon} style={AccessLinkItemStyle} >Ver Repositório</LinkProjectItem>
         </div>
         <div className="ProjectItemOpenButtonArea" onClick={openProjectItem} style={{marginRight:'1.8vmin'}}>
           <div className="ProjectItemOpenButton">
@@ -70,7 +70,7 @@ export default function ProjectItem(props) {
       <OpenedTitle button={ButtonCloseAreaContent}> {props.titleProject} </OpenedTitle>
      
     </>)
-    setProjectItemContent(<OpenedContentProjectItem titleProject={props.titleProject} authors={props.children} />)
+    setProjectItemContent(<OpenedContentProjectItem titleProject={props.titleProject} authors={props.children} href={props.href} hrefRepository={props.hrefRepository} />)
     setDescriptionContent(<OpenedDescription text={props.description}/>)
   }
   function closeProjectItem(){

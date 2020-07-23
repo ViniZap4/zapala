@@ -18,12 +18,12 @@ export default function OpenedContentProjectItem(props) {
   return (
     <div className="OpenedContentProjectItem">
       <div className="OpenedContentProjectItemAccess">
-        <div className="ProjectItemOpenButton">
+        <a href={props.href} rel="noopener noreferrer" target="_black" className="ProjectItemOpenButton">
           <span className="ProjectItemOpenButtonText">Visitar {props.titleProject}</span>
-        </div>
-        <div className="ProjectItemOpenButton">
+        </a>
+        <a  href={props.hrefRepository} rel="noopener noreferrer" target="_black" className="ProjectItemOpenButton">
           <span className="ProjectItemOpenButtonText">Ver Repositório no GitHub</span>
-        </div>
+        </a>
       </div>
       <h2 className="OpenedContentProjectItemTitleAuthors"> Stakeholders do Projetos </h2>
       <div className="OpenedContentProjectItemAuthorsArea">

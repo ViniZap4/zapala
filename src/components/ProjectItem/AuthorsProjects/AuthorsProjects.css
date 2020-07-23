@@ -45,4 +45,5 @@
 .AuthorsProjectsContentTextContent,
 .AuthorsProjectsContentTextLink{
   flex: 1 1;
+  font-size: 2.31vmin;
 }

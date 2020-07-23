@@ -15,7 +15,7 @@ export default function LinkProjectItem(props) {
   }
 
   return (
-    <div className="LinkProjectItem" style={props.style}>
+    <a href={props.href} rel="noopener noreferrer" target="_black" className="LinkProjectItem" style={props.style}>
       <div className="LinkProjectItemTextArea">
         <span className="LinkProjectItemText">
           <div className="LinkProjectItemIconArea">
@@ -25,6 +25,6 @@ export default function LinkProjectItem(props) {
         </span>
         <span className="LinkProjectItemUnderline"></span>
       </div>
-    </div>
+    </a>
   );
 }

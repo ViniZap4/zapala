@@ -18,7 +18,7 @@ export default  function AuthorsProjects(props) {
        <span className="AuthorsProjectsContentTextContent"> {props.office}</span>
       </span>
 
-        <LinkProjectItem iconSrc={props.iconSrc} >
+        <LinkProjectItem href={props.href} iconSrc={props.iconSrc} >
          <span className="AuthorsProjectsContentTextLink"> {props.textLinks} </span>
         </LinkProjectItem>
       </div>
