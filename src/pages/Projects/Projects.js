@@ -9,6 +9,8 @@ import AuthorsProjects  from '../../components/ProjectItem/AuthorsProjects/Autho
 
 // import icons
 import githubIcon from '../../images/icons/github.png'
+import linkedinIcon from '../../images/icons/linkedin.png'
+
 import connectDevelopersArticlesIcon from '../../images/icons/project/connectDevelopers.png'
 import magicLanguageIcon from '../../images/icons/project/magic-language.png'
 // import backgrounds
@@ -24,7 +26,7 @@ export default function Projects(props) {
       iconSrc={githubIcon}
       name={props.name} 
       office={props.office} 
-      textLinks="Ver repósitorios"
+      textLinks="Ver seu GitHub"
       href={`https://github.com/${props.gitHub}`}
     />
     )
@@ -54,9 +56,10 @@ export default function Projects(props) {
             description="Plataforma de aprendizado da língua inglesa desenvolvida para facilitar o entendimento do idioma. Através de lições simples e práticas que demandam apenas 15 minutos de estudo por dia para aprimorar o aprendizado." 
           >
             <DefaultMe office="gerente do projeto, Desenvolvedor" />
-            <DefaultRepositoryGit  name="Lucas Alves Ribeiro"  gitHub="NYAUW" office="Desenvolvedor, designer"  />
+            <DefaultRepositoryGit  name="Brenda Aryelle"  gitHub="bresilva-bit" office="Desenvolvedora, designer, Criadora de conteúdo"  />
+            <AuthorsProjects iconSrc={linkedinIcon} name="Guilherme Guedes" office="Desenvolvedor, Criador de conteúdo" textLinks="Ver perfil no Linkedin" href="https://www.linkedin.com/in/guilherme-guedes-b443a1104" />
+            <DefaultRepositoryGit  name="Lucas Alves Ribeiro"  gitHub="NYAUW" office="Desenvolvedor, designer"  />           
             <DefaultRepositoryGit  name="Vitor de Deus Anselmo"  gitHub="zowa14" office="Desenvolvedor, designer"  />
-
 
 
           </ProjectItem>
@@ -65,8 +68,12 @@ export default function Projects(props) {
             description="Desenvolvimento de aplicações com interface bem explicativa voltada para desenvolvedores aprenderem de programação de uma forma fácil, ágil e dinâmica." 
           >
             <DefaultMe office="gerente do projeto, Desenvolvedor, Designer" />
-            <DefaultRepositoryGit  name="Lucas Alves Ribeiro"  gitHub="NYAUW" office="Desenvolvedor, designer"  />
+            <DefaultRepositoryGit  name="Brenda Aryelle"  gitHub="bresilva-bit" office="Desenvolvedora, Responsável pela documentação"  />
+            <DefaultRepositoryGit  name="Felipe Moresqui"  gitHub="felipemoresqui" office="Desenvolvedor, Criador de conteúdo "  />
+            <DefaultRepositoryGit  name="Lucas Alves Ribeiro"  gitHub="NYAUW" office="Desenvolvedor, Criador de conteúdo "  />
+            <DefaultRepositoryGit  name="Nicolas de Santana"  gitHub="NicolasNicolau" office="Desenvolvedor, Criador de conteúdo "  />
 
+            
 
           </ProjectItem>
         </div>
